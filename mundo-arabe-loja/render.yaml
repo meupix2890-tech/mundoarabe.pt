@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mundo-arabe
+    runtime: node
+    plan: free
+    startCommand: node server.js
+    envVars:
+      - key: PAGEURO_API_KEY
+        sync: false   # define no painel do Render (secreto)

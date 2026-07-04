@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Árabe — Perfumes Árabes Originais em Portugal</title>
+<meta name="description" content="A essência do Médio Oriente em Portugal. Perfumes árabes 100% originais com fixação prolongada. Envio rápido CTT 24-48h.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&family=Amiri&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12100c;
+  --ink-soft:#3a352c;
+  --sand:#f7f2e9;
+  --sand-2:#efe6d6;
+  --cream:#fffdf8;
+  --gold:#b8935a;
+  --gold-deep:#9a7638;
+  --gold-light:#d8b878;
+  --line:#e6dcc9;
+  --green:#1f7a52;
+  --red:#c0392b;
+  --radius:14px;
+  --shadow:0 10px 40px rgba(30,22,8,.10);
+  --shadow-lg:0 24px 60px rgba(30,22,8,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Jost',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+.arabic{font-family:'Amiri',serif}
+
+/* ===== Announcement bar ===== */
+.announce{
+  background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-deep));
+  color:#fff;text-align:center;font-size:12px;letter-spacing:2px;text-transform:uppercase;
+  padding:9px 12px;font-weight:600;
+}
+.announce b{font-weight:700}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:60;background:transparent;transition:background .3s,box-shadow .3s,border-color .3s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(12,8,5,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(184,147,90,.22);box-shadow:0 8px 30px rgba(0,0,0,.4)}
+.nav{display:flex;align-items:center;gap:26px;height:84px}
+.logo{display:flex;align-items:center;gap:12px;margin-right:auto}
+.logo .logo-img{height:62px;width:auto;filter:drop-shadow(0 4px 12px rgba(184,147,90,.35))}
+.logo .mark{
+  width:52px;height:52px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,var(--gold-light),var(--gold-deep));
+  display:grid;place-items:center;color:#fff;font-family:'Amiri',serif;font-size:24px;
+  box-shadow:0 4px 14px rgba(154,118,56,.4);
+}
+.logo .txt b{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:700;letter-spacing:.5px;display:block;line-height:1;color:#fff}
+.logo .txt span{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-light)}
+.menu{display:flex;gap:24px;font-size:14px;font-weight:500}
+.menu a{position:relative;padding:6px 0;color:#e7ddcb;transition:color .2s}
+.menu a:hover{color:var(--gold-light)}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);transition:width .25s}
+.menu a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.icon-btn{background:none;border:none;cursor:pointer;color:#f0e8d8;display:grid;place-items:center;position:relative;padding:6px}
+.icon-btn svg{width:23px;height:23px}
+.cart-count{position:absolute;top:-3px;right:-4px;background:var(--gold-deep);color:#fff;font-size:11px;font-weight:600;min-width:18px;height:18px;border-radius:9px;display:grid;place-items:center;padding:0 4px}
+.burger{display:none}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:92vh;margin-top:-84px;padding:84px 0 40px;color:#fff;overflow:hidden;display:flex;align-items:center;
+  background:linear-gradient(90deg,rgba(6,4,2,.94) 0%,rgba(6,4,2,.7) 38%,rgba(6,4,2,.25) 62%,rgba(6,4,2,.55) 100%), url('assets/hero-bg.jpg') center/cover no-repeat}
+.hero-bg,.hero-bottles{display:none}
+.hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-bg .rays{position:absolute;top:48%;left:60%;width:1700px;height:1700px;transform:translate(-50%,-50%);
+  background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(224,190,120,0) 0deg,rgba(224,190,120,.16) 1deg,rgba(224,190,120,0) 3.2deg);
+  -webkit-mask-image:radial-gradient(circle at center,#000 4%,rgba(0,0,0,.6) 22%,transparent 62%);
+  mask-image:radial-gradient(circle at center,#000 4%,rgba(0,0,0,.6) 22%,transparent 62%);
+  opacity:.75;animation:spin 140s linear infinite}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.hero-bg .glow{position:absolute;top:48%;left:60%;width:1000px;height:1000px;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(224,190,120,.30) 0%,rgba(224,190,120,.10) 30%,transparent 60%)}
+.hero-bottles{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hero-bottles .hb{position:absolute;bottom:-3%;object-fit:contain;
+  -webkit-mask-image:radial-gradient(ellipse 58% 66% at 50% 46%,#000 52%,rgba(0,0,0,.35) 76%,transparent 100%);
+  mask-image:radial-gradient(ellipse 58% 66% at 50% 46%,#000 52%,rgba(0,0,0,.35) 76%,transparent 100%);
+  filter:drop-shadow(0 0 50px rgba(224,190,120,.30))}
+.hb-c{height:64%;left:74%;transform:translateX(-50%);z-index:3}
+.hb-l{height:42%;left:58%;transform:translateX(-50%);z-index:2;opacity:.8}
+.hb-r{height:48%;left:90%;transform:translateX(-50%);z-index:2;opacity:.9}
+.hero-content{position:relative;z-index:5;max-width:660px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-light);border:1px solid rgba(184,147,90,.45);background:rgba(184,147,90,.06);padding:8px 18px;border-radius:30px;margin-bottom:26px}
+.hero h1{font-size:clamp(44px,7vw,88px);line-height:1.0;font-weight:600;margin-bottom:22px;letter-spacing:-.5px}
+.hero h1 em{color:var(--gold-light);font-style:normal}
+.hero p.lead{font-size:19px;color:#ded4c2;max-width:520px;margin-bottom:34px;font-weight:300;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-cta .btn{text-transform:uppercase;letter-spacing:1.2px;font-size:14px}
+.btn{cursor:pointer;border:none;font-family:inherit;font-weight:600;font-size:15px;padding:15px 30px;border-radius:40px;transition:transform .15s,box-shadow .2s,background .2s;display:inline-flex;align-items:center;gap:9px}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:linear-gradient(90deg,var(--gold),var(--gold-deep));color:#fff;box-shadow:0 8px 24px rgba(184,147,90,.45)}
+.btn-gold:hover{box-shadow:0 12px 30px rgba(184,147,90,.6)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+/* ===== Trust strip ===== */
+.trust{background:var(--sand);border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:20px 0}
+.trust-grid .t{display:flex;align-items:center;gap:12px;justify-content:center;font-size:14px;font-weight:500;color:var(--ink-soft)}
+.trust-grid .t svg{width:26px;height:26px;color:var(--gold-deep);flex-shrink:0}
+.trust-grid .t b{color:var(--ink)}
+
+/* ===== Section shell ===== */
+section{padding:64px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 42px}
+.sec-head .kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:10px}
+.sec-head h2{font-size:clamp(30px,4vw,46px);font-weight:700;line-height:1.05}
+.sec-head p{color:var(--ink-soft);margin-top:12px;font-weight:300;font-size:16px}
+
+/* ===== Product grid ===== */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s;position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .media{position:relative;aspect-ratio:1;background:linear-gradient(145deg,#fbf7ef,#f0e7d6);overflow:hidden;display:grid;place-items:center;padding:18px}
+.card .media img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transition:transform .4s}
+.card:hover .media img{transform:scale(1.06)}
+.badge{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:12px;font-weight:600;padding:5px 10px;border-radius:20px;letter-spacing:.3px;z-index:2}
+.tag{position:absolute;top:12px;right:12px;font-size:11px;font-weight:600;padding:4px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.5px;z-index:2}
+.tag.new{background:var(--green);color:#fff}
+.tag.hot{background:#e8720c;color:#fff}
+.card .body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1}
+.card .cat{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:5px}
+.card h3{font-family:'Jost',sans-serif;font-size:15px;font-weight:600;line-height:1.3;margin-bottom:8px;min-height:39px}
+.stars{color:var(--gold);font-size:13px;letter-spacing:1px;margin-bottom:10px}
+.stars span{color:var(--ink-soft);font-size:12px;margin-left:5px}
+.price{display:flex;align-items:baseline;gap:8px;margin-top:auto;margin-bottom:12px}
+.price .now{font-size:21px;font-weight:600;color:var(--ink)}
+.price .was{font-size:14px;color:#a99;text-decoration:line-through}
+.add{width:100%;background:var(--ink);color:#fff;border:none;padding:12px;border-radius:30px;font-family:inherit;font-weight:600;font-size:14px;cursor:pointer;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.add:hover{background:var(--gold-deep)}
+.add svg{width:17px;height:17px}
+
+/* ===== Buy1 Get2 banner ===== */
+.b1g2{background:linear-gradient(135deg,#241c11,#3c2f19);color:#fff;border-radius:22px;overflow:hidden;position:relative;padding:52px 46px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+.b1g2::after{content:"2";position:absolute;right:-20px;bottom:-60px;font-family:'Cormorant Garamond',serif;font-size:340px;color:rgba(184,147,90,.10);font-weight:700;line-height:1}
+.b1g2 .badge-off{display:inline-block;background:var(--gold);color:#1c1710;font-weight:700;font-size:13px;letter-spacing:1px;padding:7px 16px;border-radius:30px;margin-bottom:16px}
+.b1g2 h2{font-size:44px;line-height:1;margin-bottom:14px}
+.b1g2 h2 em{color:var(--gold-light);font-style:italic}
+.b1g2 p{color:#ddd3c1;max-width:420px;font-weight:300;position:relative;z-index:2}
+.b1g2 ul{list-style:none;margin:18px 0 0;position:relative;z-index:2}
+.b1g2 ul li{padding-left:26px;position:relative;margin-bottom:6px;font-size:14px}
+.b1g2 ul li::before{content:"✦";position:absolute;left:0;color:var(--gold-light)}
+
+/* ===== Category tiles ===== */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cat-tile{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:var(--sand);transition:transform .2s,box-shadow .2s}
+.cat-tile:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.cat-tile h3{font-family:'Cormorant Garamond',serif;font-size:26px;margin-bottom:6px}
+.cat-tile p{color:var(--ink-soft);font-size:14px;font-weight:300}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:13px;padding:6px 14px;border-radius:20px;background:#fff;border:1px solid var(--line);cursor:pointer;transition:.2s}
+.chip:hover{background:var(--gold);color:#fff;border-color:var(--gold)}
+
+/* ===== Packs ===== */
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pack{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--cream);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.pack:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.pack .ph{background:linear-gradient(145deg,#2c2318,#413320);color:#fff;padding:26px;position:relative}
+.pack .save{position:absolute;top:16px;right:16px;background:var(--gold);color:#1c1710;font-weight:700;font-size:12px;padding:5px 12px;border-radius:20px}
+.pack .ph h3{font-size:26px;color:#fff}
+.pack .ph .sub{color:var(--gold-light);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.pack .pb{padding:22px;display:flex;flex-direction:column;flex:1}
+.pack .pb ul{list-style:none;margin-bottom:18px}
+.pack .pb li{padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;display:flex;gap:10px;align-items:center}
+.pack .pb li::before{content:"✓";color:var(--green);font-weight:700}
+.pack .pb .price{margin-top:auto}
+
+/* ===== Brands ===== */
+.brands{background:var(--sand);text-align:center}
+.brand-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 40px;margin-top:20px}
+.brand-row span{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--ink-soft);opacity:.7;transition:.2s;letter-spacing:1px}
+.brand-row span:hover{opacity:1;color:var(--gold-deep)}
+
+/* ===== Testimonials ===== */
+.reviews{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.review{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.review .stars{margin-bottom:12px}
+.review p{font-size:14px;color:var(--ink-soft);margin-bottom:16px;font-style:italic}
+.review .who{display:flex;align-items:center;gap:10px}
+.review .av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--gold-light),var(--gold-deep));display:grid;place-items:center;color:#fff;font-weight:600}
+.review .who b{font-size:14px;display:block}
+.review .who span{font-size:12px;color:#a99}
+
+/* ===== FAQ ===== */
+.faq-wrap{max-width:780px;margin:0 auto}
+.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden;background:var(--cream)}
+.faq q-btn,.faq .q{width:100%;text-align:left;background:none;border:none;padding:20px 22px;font-family:inherit;font-size:16px;font-weight:500;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--ink)}
+.faq .q .plus{color:var(--gold-deep);font-size:22px;transition:transform .25s;flex-shrink:0}
+.faq.open .q .plus{transform:rotate(45deg)}
+.faq .a{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--ink-soft);font-weight:300}
+.faq .a p{padding:0 22px 20px}
+.faq.open .a{max-height:220px}
+
+/* ===== Newsletter ===== */
+.news{background:linear-gradient(135deg,#1c1710,#332818);color:#fff;text-align:center;border-radius:22px;padding:56px 30px;position:relative;overflow:hidden}
+.news h2{font-size:40px;margin-bottom:10px}
+.news h2 em{color:var(--gold-light);font-style:italic}
+.news p{color:#ddd3c1;font-weight:300;margin-bottom:26px}
+.news form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.news input{flex:1;min-width:220px;padding:15px 20px;border-radius:40px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-family:inherit;font-size:15px}
+.news input::placeholder{color:#bcb3a2}
+
+/* ===== Footer ===== */
+footer{background:#161209;color:#c9c0b0;padding:60px 0 28px;font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-grid h4{color:#fff;font-family:'Jost',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;font-weight:600}
+.foot-grid a{display:block;padding:5px 0;color:#b0a794;transition:color .2s}
+.foot-grid a:hover{color:var(--gold-light)}
+.foot-about p{color:#b0a794;font-weight:300;margin-top:14px;max-width:290px}
+.foot-pay{display:flex;gap:8px;margin-top:18px}
+.foot-pay span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:6px 12px;font-size:12px;font-weight:600;letter-spacing:.5px}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;color:#8a8375;font-size:13px;flex-wrap:wrap;gap:10px}
+
+/* ===== Cart drawer (dark) ===== */
+.overlay{position:fixed;inset:0;background:rgba(8,5,2,.62);opacity:0;visibility:hidden;transition:.3s;z-index:90}
+.overlay.show{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;right:0;height:100%;width:440px;max-width:92vw;background:#141009;color:#ede4d3;z-index:100;transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;box-shadow:var(--shadow-lg)}
+.drawer.show{transform:translateX(0)}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border-bottom:1px solid rgba(255,255,255,.08)}
+.drawer-head h3{font-size:24px;display:flex;align-items:center;gap:10px;color:#fff}
+.drawer-head h3 svg{width:24px;height:24px;color:var(--gold-light)}
+.drawer-head .x{background:none;border:none;font-size:26px;cursor:pointer;color:#c9bfad;line-height:1}
+.drawer-head .x:hover{color:#fff}
+/* free-ship progress */
+.ship-bar{padding:15px 22px;border-bottom:1px solid rgba(255,255,255,.06)}
+.ship-msg{display:flex;align-items:center;gap:10px;font-size:14px;margin-bottom:10px;color:#d8cdb8}
+.ship-msg svg{width:20px;height:20px;color:var(--gold-light);flex-shrink:0}
+.ship-msg b{color:var(--gold-light)}
+.ship-track{height:8px;border-radius:20px;background:rgba(255,255,255,.10);overflow:hidden}
+.ship-fill{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--gold-deep),var(--gold-light));transition:width .4s}
+.drawer-body{flex:1;overflow-y:auto;padding:6px 22px 16px}
+/* cart item */
+.cart-item{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.ci-img{position:relative;width:78px;height:78px;flex-shrink:0;background:#fff;border-radius:12px;overflow:hidden}
+.ci-img img{width:100%;height:100%;object-fit:contain;padding:6px}
+.ci-img .orig{position:absolute;top:4px;left:4px;background:var(--gold-deep);color:#fff;font-size:8px;font-weight:700;letter-spacing:.5px;padding:2px 5px;border-radius:4px}
+.ci-info{flex:1;min-width:0}
+.ci-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.ci-info .br{font-size:12px;color:var(--gold-light);font-weight:600;letter-spacing:.3px}
+.ci-info h4{font-size:14px;font-weight:500;line-height:1.32;color:#ede4d3;margin:1px 0 0}
+.ci-del{background:none;border:none;color:#8f8674;cursor:pointer;padding:2px;flex-shrink:0}
+.ci-del:hover{color:var(--red)}
+.ci-del svg{width:20px;height:20px}
+.ci-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
+.qty{display:flex;align-items:center;border:1px solid rgba(255,255,255,.16);border-radius:9px;overflow:hidden}
+.qty button{width:34px;height:34px;border:none;background:transparent;cursor:pointer;font-size:17px;line-height:1;color:#ede4d3}
+.qty button:hover{background:rgba(255,255,255,.08)}
+.qty span{font-weight:600;min-width:30px;text-align:center;font-size:14px}
+.ci-price{color:var(--gold-light);font-weight:600;font-size:17px}
+.ci-price.free{color:var(--green);font-weight:700}
+.cart-empty{text-align:center;color:#8f8674;padding:70px 20px}
+/* recommendations */
+.reco-h{display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-light);margin:20px 0 12px}
+.reco-h svg{width:16px;height:16px}
+.reco{display:flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:10px;margin-bottom:10px}
+.reco img{width:52px;height:52px;object-fit:contain;background:#fff;border-radius:8px;padding:4px;flex-shrink:0}
+.reco .r-tx{flex:1;min-width:0}
+.reco .r-tx .br{font-size:11px;color:var(--gold-light);font-weight:600}
+.reco .r-tx h5{font-size:12.5px;font-weight:500;color:#ede4d3;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.reco .r-tx .rp{font-size:13px;color:var(--gold-light);font-weight:600;margin-top:2px}
+.reco .r-add{background:none;border:1px solid var(--gold);color:var(--gold-light);font-family:inherit;font-weight:700;font-size:11px;letter-spacing:.5px;padding:9px 13px;border-radius:20px;cursor:pointer;flex-shrink:0;transition:.2s}
+.reco .r-add:hover{background:var(--gold);color:#1a1209}
+/* footer */
+.drawer-foot{padding:16px 22px 22px;border-top:1px solid rgba(255,255,255,.08);background:#100c07}
+.gift-box{display:flex;align-items:center;gap:12px;border:1px dashed var(--gold);border-radius:12px;padding:12px 14px;margin-bottom:16px;background:rgba(184,147,90,.05)}
+.gift-box .g-ic{color:var(--gold-light);flex-shrink:0}
+.gift-box .g-ic svg{width:26px;height:26px}
+.gift-box .g-tx{flex:1;min-width:0}
+.gift-box .g-tx b{display:block;font-size:14px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gift-box .g-tx span{font-size:12px;color:#b3a894}
+.gift-box .g-tx .free{color:var(--green);font-weight:700}
+.gift-box .g-btn{background:none;border:none;color:var(--gold-light);font-family:inherit;font-weight:600;font-size:13px;cursor:pointer;white-space:nowrap}
+.gift-box .g-btn:hover{text-decoration:underline}
+.drawer-foot .row{display:flex;justify-content:space-between;margin-bottom:7px;font-size:15px;color:#c9bfad}
+.drawer-foot .row.total{font-size:21px;font-weight:700;color:#fff;margin:12px 0 16px}
+.drawer-foot .row.total b{color:var(--gold-light)}
+/* gift modal */
+.gift-modal{position:fixed;z-index:120;top:50%;left:50%;transform:translate(-50%,-46%);width:520px;max-width:94vw;max-height:88vh;background:#141009;color:#ede4d3;border-radius:18px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:transform .3s,opacity .28s,visibility .28s}
+.gift-modal.show{opacity:1;visibility:visible;transform:translate(-50%,-50%)}
+.gift-modal .co-head{border-bottom:1px solid rgba(255,255,255,.08)}
+.gift-modal .co-title{color:#fff}
+.gift-modal .co-close{color:#c9bfad}
+.gift-body{padding:16px 20px 22px;overflow-y:auto}
+.gift-pick{display:flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:10px;margin-bottom:10px;cursor:pointer;transition:.2s}
+.gift-pick:hover{border-color:var(--gold);background:rgba(184,147,90,.06)}
+.gift-pick img{width:54px;height:54px;object-fit:contain;background:#fff;border-radius:8px;padding:4px;flex-shrink:0}
+.gift-pick .br{font-size:11px;color:var(--gold-light);font-weight:600}
+.gift-pick h5{font-size:13px;font-weight:500;color:#ede4d3;line-height:1.25}
+.gift-pick .rp{font-size:12px;margin-top:2px;color:#b3a894}
+.gift-pick .rp s{color:#8f8674}
+.gift-pick .rp .free{color:var(--green);font-weight:700}
+.gift-pick .gp-btn{margin-left:auto;background:var(--gold);color:#1a1209;font-weight:700;font-size:12px;padding:9px 14px;border-radius:20px;white-space:nowrap}
+/* product hover hint */
+.card{cursor:pointer}
+.card-view{position:absolute;left:50%;bottom:12px;transform:translateX(-50%) translateY(8px);background:rgba(18,16,12,.88);color:#fff;font-size:12px;font-weight:600;letter-spacing:.5px;padding:7px 16px;border-radius:20px;opacity:0;transition:.25s;pointer-events:none;z-index:2;white-space:nowrap}
+.card:hover .card-view{opacity:1;transform:translateX(-50%) translateY(0)}
+/* generic modal (search/quiz/rastreio/info) */
+.gen-modal{position:fixed;z-index:120;top:50%;left:50%;transform:translate(-50%,-46%);width:520px;max-width:94vw;max-height:88vh;background:var(--cream);color:var(--ink);border-radius:18px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:transform .3s,opacity .28s,visibility .28s}
+.gen-modal.show{opacity:1;visibility:visible;transform:translate(-50%,-50%)}
+.gen-body{padding:20px 24px 26px;overflow-y:auto}
+.gen-input{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:11px;font-family:inherit;font-size:15px;background:#fff;color:var(--ink)}
+.gen-input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,147,90,.15)}
+.gen-body p{font-size:14px;line-height:1.65;color:var(--ink-soft);margin-bottom:10px}
+.gen-body p b{color:var(--ink)}
+.gen-body h4{font-family:'Cormorant Garamond',serif}
+.search-results{margin-top:14px;display:grid;gap:10px}
+.sr{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:12px;padding:10px;cursor:pointer;background:#fff;transition:.2s}
+.sr:hover{border-color:var(--gold)}
+.sr img{width:50px;height:50px;object-fit:contain;background:var(--sand);border-radius:8px;padding:4px;flex-shrink:0}
+.sr .br{font-size:11px;color:var(--gold-deep);font-weight:700}
+.sr h5{font-size:13px;font-weight:500;line-height:1.25}
+.sr .rp{font-size:13px;color:var(--gold-deep);font-weight:600;margin-top:2px}
+.track-box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.tb-h{font-size:15px;margin-bottom:14px}
+.tstep{display:flex;align-items:center;gap:10px;padding:7px 0;font-size:14px;color:#a99}
+.tstep .dot{width:12px;height:12px;border-radius:50%;background:var(--line);flex-shrink:0}
+.tstep.done{color:var(--ink);font-weight:500}
+.tstep.done .dot{background:var(--green)}
+.quiz-q{margin-bottom:16px}
+.quiz-q b{display:block;margin-bottom:8px;font-size:15px}
+.quiz-opts{display:flex;gap:8px;flex-wrap:wrap}
+.qopt{border:1px solid var(--line);background:#fff;border-radius:20px;padding:9px 16px;font-family:inherit;font-size:14px;cursor:pointer;transition:.2s;color:var(--ink)}
+.qopt:hover{border-color:var(--gold-light)}
+.qopt.sel{background:var(--gold);color:#fff;border-color:var(--gold)}
+
+/* product FULL PAGE */
+.product-page{position:fixed;inset:0;z-index:130;background:var(--cream);color:var(--ink);overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .25s,transform .25s,visibility .25s}
+.product-page.show{opacity:1;visibility:visible;transform:none}
+.pp-top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:16px;background:rgba(255,253,248,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 22px}
+.pp-back{display:inline-flex;align-items:center;gap:7px;background:none;border:none;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer;color:var(--ink)}
+.pp-back:hover{color:var(--gold-deep)}
+.pp-crumb{flex:1;font-size:13px;color:var(--ink-soft)}
+.pp-crumb b{color:var(--gold-deep)}
+.pp-cart{background:none;border:none;cursor:pointer;color:var(--ink)}
+.pp-wrap{max-width:1120px;margin:0 auto;padding:30px 22px 90px}
+.pp-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.pp-media{position:sticky;top:92px;background:linear-gradient(145deg,#fbf7ef,#eadfcd);border-radius:16px;display:grid;place-items:center;padding:40px;min-height:460px}
+.pp-media img{width:100%;max-height:460px;object-fit:contain;mix-blend-mode:multiply}
+.pp-media .badge{position:absolute;top:16px;left:16px;background:var(--red);color:#fff;font-size:14px;font-weight:700;padding:6px 13px;border-radius:20px}
+.pp-media .best{position:absolute;top:16px;right:16px;background:#e8720c;color:#fff;font-size:12px;font-weight:700;padding:6px 12px;border-radius:20px}
+.pp-brand{color:var(--gold-deep);font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.pp-title{font-family:'Cormorant Garamond',serif;font-size:38px;line-height:1.05;margin:6px 0 10px}
+.pp-rate{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-soft);margin-bottom:12px}
+.pp-rate .stars{color:var(--gold);letter-spacing:1px}
+.pp-insp{display:inline-block;background:rgba(184,147,90,.12);color:var(--gold-deep);border:1px solid rgba(184,147,90,.3);font-size:13px;font-weight:600;padding:6px 14px;border-radius:20px;margin-bottom:16px}
+.pp-price{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+.pp-price .now{font-size:36px;font-weight:700}
+.pp-price .was{font-size:19px;color:#a99;text-decoration:line-through}
+.pp-price .poupa{background:var(--green);color:#fff;font-size:13px;font-weight:700;padding:4px 10px;border-radius:20px;align-self:center}
+.pp-stock{display:flex;align-items:center;gap:8px;color:#c0392b;font-weight:600;font-size:14px;margin:14px 0 8px}
+.pp-social{display:flex;flex-wrap:wrap;gap:18px;color:var(--ink-soft);font-size:13px;margin-bottom:22px}
+.pp-buy{display:flex;gap:12px;margin-bottom:12px}
+.pp-qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.pp-qty button{width:46px;height:56px;border:none;background:transparent;cursor:pointer;font-size:20px;color:var(--ink)}
+.pp-qty button:hover{background:var(--sand)}
+.pp-qty span{min-width:40px;text-align:center;font-weight:700;font-size:16px}
+.pp-buy .btn{flex:1;justify-content:center;font-size:16px;padding:16px}
+.pp-badges{display:flex;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px}
+.pp-badges .b{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--ink-soft);font-weight:500}
+.pp-badges .b svg{width:18px;height:18px;color:var(--gold-deep)}
+.pp-section{margin-top:48px}
+.pp-section h3{font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:18px;text-align:center}
+.pyramid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pyr{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 18px;text-align:center}
+.pyr .lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:9px}
+.pyr .notes{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);line-height:1.3}
+.spec{border:1px solid var(--line);border-radius:14px;overflow:hidden;max-width:640px;margin:0 auto}
+.spec .row{display:flex;justify-content:space-between;padding:13px 18px;font-size:14px;border-bottom:1px solid var(--line)}
+.spec .row:last-child{border-bottom:none}
+.spec .row:nth-child(odd){background:var(--sand)}
+.spec .row span:first-child{color:var(--ink-soft)}
+.spec .row span:last-child{font-weight:600}
+.pp-desc-sec{margin-top:44px;background:var(--sand);border:1px solid var(--line);border-radius:14px;padding:26px 28px;color:var(--ink-soft);line-height:1.7;font-size:15px}
+.pp-related .rel-sub{text-align:center;color:var(--ink-soft);margin:-10px 0 22px}
+.pyr{min-width:0}
+.pyr .notes{overflow-wrap:anywhere}
+@media(max-width:860px){
+  .pp-grid{grid-template-columns:1fr;gap:26px}
+  .pp-media{position:static;min-height:320px;padding:26px}
+  .pp-title{font-size:30px}
+}
+@media(max-width:560px){
+  .pyramid{grid-template-columns:1fr;gap:10px}
+  .pyr{display:flex;align-items:center;justify-content:space-between;text-align:left;padding:14px 16px}
+  .pyr .lbl{margin-bottom:0}
+  .pyr .notes{font-size:16px;text-align:right}
+  .pp-wrap{padding:22px 16px 70px}
+  .pp-section h3{font-size:24px}
+  .pp-price .now{font-size:30px}
+  .pp-title{font-size:26px}
+}
+
+/* product modal (legacy, unused) */
+.product-modal{position:fixed;z-index:120;top:50%;left:50%;transform:translate(-50%,-46%);width:840px;max-width:95vw;max-height:92vh;background:var(--cream);border-radius:18px;box-shadow:var(--shadow-lg);opacity:0;visibility:hidden;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .28s,visibility .28s;overflow:hidden}
+.product-modal.show{opacity:1;visibility:visible;transform:translate(-50%,-50%)}
+.pm-x{position:absolute;top:14px;right:14px;z-index:4;background:rgba(255,255,255,.92);border:1px solid var(--line);width:38px;height:38px;border-radius:50%;font-size:22px;cursor:pointer;color:var(--ink);line-height:1;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.pm-x:hover{background:#fff}
+.pm-body{display:grid;grid-template-columns:1fr 1fr;max-height:92vh;overflow-y:auto}
+.pm-media{position:relative;background:linear-gradient(145deg,#fbf7ef,#eadfcd);display:grid;place-items:center;padding:34px;min-height:380px}
+.pm-media img{width:100%;max-height:440px;object-fit:contain;mix-blend-mode:multiply}
+.pm-media .badge{position:absolute;top:16px;left:16px;background:var(--red);color:#fff;font-size:13px;font-weight:700;padding:6px 12px;border-radius:20px}
+.pm-media .orig{position:absolute;top:16px;right:16px;background:var(--gold-deep);color:#fff;font-size:10px;font-weight:700;letter-spacing:1px;padding:5px 10px;border-radius:6px}
+.pm-info{padding:30px}
+.pm-brand{color:var(--gold-deep);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.pm-info h2{font-family:'Cormorant Garamond',serif;font-size:31px;line-height:1.06;margin:6px 0 6px}
+.pm-info .stars{color:var(--gold);font-size:14px;letter-spacing:1px}
+.pm-info .stars span{color:var(--ink-soft);font-size:12px;margin-left:5px}
+.pm-price{display:flex;align-items:baseline;gap:11px;margin:16px 0 4px}
+.pm-price .now{font-size:31px;font-weight:700;color:var(--ink)}
+.pm-price .was{font-size:17px;color:#a99;text-decoration:line-through}
+.pm-price .off{background:var(--red);color:#fff;font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px;align-self:center}
+.pm-save{font-size:13px;color:var(--green);font-weight:600;margin-bottom:14px}
+.pm-desc{color:var(--ink-soft);font-size:14px;line-height:1.6;margin-bottom:16px}
+.pm-feats{list-style:none;margin-bottom:20px;display:grid;gap:7px}
+.pm-feats li{display:flex;gap:9px;align-items:center;font-size:13.5px;color:var(--ink-soft)}
+.pm-feats li svg{color:var(--gold-deep);width:17px;height:17px;flex-shrink:0}
+.pm-actions{display:flex;gap:10px;margin-bottom:10px}
+.pm-qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.pm-qty button{width:42px;height:52px;border:none;background:transparent;cursor:pointer;font-size:19px;color:var(--ink)}
+.pm-qty button:hover{background:var(--sand)}
+.pm-qty span{min-width:38px;text-align:center;font-weight:700}
+.pm-actions .btn{flex:1;justify-content:center;padding:15px}
+.pm-buy{width:100%;justify-content:center}
+@media(max-width:720px){
+  .pm-body{grid-template-columns:1fr}
+  .pm-media{min-height:260px;padding:24px}
+  .pm-media img{max-height:260px}
+}
+
+/* ===== Toast ===== */
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--ink);color:#fff;padding:14px 24px;border-radius:40px;font-size:14px;font-weight:500;z-index:120;transition:transform .3s;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:10px}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.toast svg{width:18px;height:18px;color:var(--gold-light)}
+
+/* ===== Checkout ===== */
+.co-overlay{position:fixed;inset:0;background:rgba(20,14,4,.6);opacity:0;visibility:hidden;transition:.3s;z-index:110}
+.co-overlay.show{opacity:1;visibility:visible}
+.checkout{position:fixed;z-index:120;top:50%;left:50%;transform:translate(-50%,-46%);width:560px;max-width:94vw;max-height:92vh;background:var(--cream);border-radius:18px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:transform .32s cubic-bezier(.4,0,.2,1),opacity .28s,visibility .28s}
+.checkout.show{opacity:1;visibility:visible;transform:translate(-50%,-50%)}
+.co-head{display:flex;align-items:center;gap:10px;padding:16px 20px 12px;border-bottom:1px solid var(--line)}
+.co-title{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:700;flex:1;text-align:center}
+.co-back,.co-close{background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink);width:34px;height:34px;border-radius:9px;line-height:1}
+.co-back:hover,.co-close:hover{background:var(--sand)}
+.co-steps{display:flex;justify-content:center;align-items:center;gap:8px;padding:14px 20px 4px}
+.co-steps .st{display:flex;align-items:center;gap:6px;font-size:12px;color:#b3a894;font-weight:600}
+.co-steps .st .n{width:22px;height:22px;border-radius:50%;background:var(--sand-2);color:#b3a894;display:grid;place-items:center;font-size:12px;transition:.2s}
+.co-steps .st.active{color:var(--gold-deep)}
+.co-steps .st.active .n{background:var(--gold);color:#fff}
+.co-steps .sep{width:26px;height:1px;background:var(--line)}
+.co-body{padding:18px 22px 24px;overflow-y:auto}
+.co-summary{background:var(--sand);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:18px}
+.co-summary .li{display:flex;justify-content:space-between;gap:12px;font-size:14px;padding:4px 0;color:var(--ink-soft)}
+.co-summary .li.tot{font-weight:700;font-size:17px;color:var(--ink);border-top:1px solid var(--line);margin-top:6px;padding-top:9px}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:13px;font-weight:600;margin-bottom:5px;color:var(--ink-soft)}
+.field input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:15px;background:#fff;color:var(--ink)}
+.field input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,147,90,.15)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pay-methods{display:grid;gap:10px;margin-bottom:16px}
+.pm{display:flex;align-items:center;gap:13px;border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;cursor:pointer;transition:.18s}
+.pm:hover{border-color:var(--gold-light)}
+.pm.sel{border-color:var(--gold);background:rgba(184,147,90,.06)}
+.pm .pm-ic{width:46px;height:32px;border-radius:6px;display:grid;place-items:center;font-size:10px;line-height:1.05;font-weight:800;color:#fff;text-align:center;flex-shrink:0;letter-spacing:.3px}
+.pm .pm-tx{flex:1}
+.pm .pm-tx b{font-size:14.5px;display:block}
+.pm .pm-tx span{font-size:12px;color:#a99}
+.pm .pm-rd{width:20px;height:20px;border-radius:50%;border:2px solid var(--line);flex-shrink:0}
+.pm.sel .pm-rd{border-color:var(--gold);background:radial-gradient(circle,var(--gold) 42%,transparent 46%)}
+.pm-fields{margin-bottom:16px}
+.co-info{background:var(--sand);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+.co-note{font-size:12px;color:#a99;text-align:center;margin-top:12px;line-height:1.5}
+.cp-hint{font-size:12px;margin-top:5px;min-height:15px;line-height:1.3}
+.cp-hint.loading{color:#a99}
+.cp-hint.ok{color:var(--green);font-weight:600}
+.cp-hint.err{color:var(--red)}
+.co-err{background:#fdecea;border:1px solid #f5c6c0;color:var(--red);font-size:13px;padding:10px 12px;border-radius:9px;margin-bottom:14px;display:none;font-weight:500}
+.mb-ref{background:var(--sand);border:1px dashed var(--gold);border-radius:12px;padding:16px;margin:6px 0 2px}
+.mb-ref .r{display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:14px;color:var(--ink-soft)}
+.mb-ref .r b{font-family:'Jost',monospace;font-size:19px;letter-spacing:1px;color:var(--ink);font-weight:600}
+.co-success{text-align:center;padding:14px 0 4px}
+.co-success h3{font-family:'Cormorant Garamond',serif;font-size:29px;margin-bottom:6px}
+.co-success .ck{width:70px;height:70px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin:0 auto 16px;box-shadow:0 8px 24px rgba(31,122,82,.35);animation:pop .4s ease}
+@keyframes pop{0%{transform:scale(.4);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+.pay-status{display:flex;align-items:center;justify-content:center;gap:9px;font-size:13.5px;font-weight:500;padding:12px 14px;border-radius:11px;margin-top:14px;line-height:1.4}
+.pay-status .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.pay-status.waiting{background:rgba(232,160,32,.10);border:1px solid rgba(232,160,32,.3);color:#b9791a}
+.pay-status.waiting .dot{background:#e8a020;animation:pulse 1.1s infinite}
+.pay-status.paid{background:#eaf5ef;border:1px solid #cbe6d8;color:var(--green)}
+.pay-status.failed{background:#fdecea;border:1px solid #f5c6c0;color:var(--red)}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+
+@media(max-width:960px){
+  .hero{min-height:88vh;text-align:center;background:linear-gradient(180deg,rgba(6,4,2,.86),rgba(6,4,2,.5) 42%,rgba(6,4,2,.82)), url('assets/hero-bg.jpg') center/cover no-repeat}
+  .hero-content{max-width:100%}
+  .hero .eyebrow,.hero-cta{justify-content:center;display:flex}
+  .hero p.lead{margin-left:auto;margin-right:auto}
+  .hero-bottles{opacity:.35}
+  .hb-c{height:52%}.hb-l{height:34%}.hb-r{height:40%}
+  .grid,.reviews{grid-template-columns:repeat(2,1fr)}
+  .cats,.packs{grid-template-columns:1fr}
+  .b1g2{grid-template-columns:1fr;padding:36px 26px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .trust-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .hero-stats{grid-template-columns:1fr 1fr;gap:20px}
+}
+@media(max-width:640px){
+  .menu{display:none;position:absolute;top:84px;left:0;right:0;background:rgba(12,8,5,.98);backdrop-filter:blur(14px);flex-direction:column;padding:8px 20px 14px;gap:0;border-bottom:1px solid rgba(184,147,90,.22);box-shadow:0 12px 30px rgba(0,0,0,.5);max-height:calc(100vh - 84px);overflow-y:auto}
+  .menu.open{display:flex}
+  .menu a{padding:15px 4px;border-bottom:1px solid rgba(255,255,255,.06);font-size:16px}
+  .menu a:last-child{border-bottom:none}
+  .grid,.reviews{grid-template-columns:1fr 1fr;gap:14px}
+  .card h3{font-size:14px}
+  .b1g2 h2,.news h2{font-size:32px}
+  .foot-grid{grid-template-columns:1fr}
+  .sec-head h2{font-size:30px}
+}
+.menu-back{display:none}
+@media(max-width:640px){ .menu-back.on{display:block;position:fixed;inset:84px 0 0;background:rgba(0,0,0,.4);z-index:55} }
+</style>
+<script src="config.js"></script>
+</head>
+<body>
+
+<div class="announce">★ +3.000 CLIENTES SATISFEITOS &nbsp;·&nbsp; 4,9/5 ★ &nbsp;·&nbsp; ENVIO CTT 24-48H EM TODO O PORTUGAL</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Mundo Árabe" onclick="showHome()">
+      <img class="logo-img" src="assets/logo.webp" alt="Mundo Árabe" onerror="this.style.display='none';document.getElementById('logoFallback').style.display='flex'">
+      <span id="logoFallback" style="display:none;align-items:center;gap:12px">
+        <span class="mark arabic">ع</span>
+        <span class="txt"><b>Mundo Árabe</b><span>Perfumes Originais</span></span>
+      </span>
+    </a>
+    <nav class="menu">
+      <a href="#" onclick="showCategory(null,'Todos os Perfumes');return false">Todos</a>
+      <a href="#" onclick="showCategory('Masculino','Perfumes Masculinos');return false">Masculinos</a>
+      <a href="#" onclick="showCategory('Feminino','Perfumes Femininos');return false">Femininos</a>
+      <a href="#" onclick="showCategory('Unisex','Perfumes Unissexo');return false">Unissexo</a>
+      <a href="#" onclick="goPacks();return false">Packs</a>
+      <a href="#" onclick="openQuiz();return false">Quiz</a>
+      <a href="#" onclick="openRastreio();return false">Rastreio</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" title="Procurar" aria-label="Procurar" onclick="openSearch()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn" title="Favoritos" aria-label="Favoritos" onclick="openQuiz()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="openCart" title="Carrinho" aria-label="Carrinho">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6 5 3H2"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="rays"></div>
+    <div class="glow"></div>
+  </div>
+  <div class="hero-bottles">
+    <img class="hb hb-l" src="https://www.lattafa-usa.com/cdn/shop/files/Afeef-1.png" alt="" loading="eager">
+    <img class="hb hb-c" src="https://www.lattafa-usa.com/cdn/shop/files/ASADELIXIRBOTTLE.png" alt="" loading="eager">
+    <img class="hb hb-r" src="https://www.lattafa-usa.com/cdn/shop/files/Musamam-White-1.png" alt="" loading="eager">
+  </div>
+  <div class="wrap hero-content">
+    <span class="eyebrow">✦ Coleção Exclusiva 2026</span>
+    <h1>A essência do <em>Médio Oriente</em> em <em>Portugal</em>.</h1>
+    <p class="lead">Perfumes árabes 100% originais com fixação prolongada. Importação direta. Envio rápido. Pagamento seguro.</p>
+    <div class="hero-cta">
+      <a href="#bestsellers" class="btn btn-gold">Ver Coleção</a>
+      <a href="#faq" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M18 6l-2.5 2.5M6 18l2.5-2.5M18 18l-2.5-2.5"/></svg>
+        Descobre o Teu Perfume
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg><div><b>100% Original</b><br>Importação direta</div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="7" width="15" height="10" rx="1"/><path d="M16 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg><div><b>Envio Rápido</b><br>CTT 24-48h</div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div><b>Pagamento Seguro</b><br>MB WAY & SSL</div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7S9 2 6.5 4 9 7 12 7zM12 7s3-5 5.5-3S15 7 12 7z"/></svg><div><b>Compra 1, Leva 2</b><br>Oferta especial</div></div>
+  </div>
+</div>
+
+<!-- CATALOG (categorias) -->
+<section id="catalog" style="display:none">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Catálogo</div>
+      <h2 id="catTitle">Todos os Perfumes</h2>
+      <p id="catSub"></p>
+    </div>
+    <div class="grid" id="catGrid"></div>
+    <div style="text-align:center;margin-top:34px">
+      <button class="btn btn-ghost" style="color:var(--ink);border-color:var(--ink)" onclick="showHome()">← Voltar ao início</button>
+    </div>
+  </div>
+</section>
+
+<!-- BESTSELLERS -->
+<section id="secBest">
+  <div class="wrap">
+    <div class="sec-head" id="bestsellers">
+      <div class="kicker">🔥 Os mais vendidos</div>
+      <h2>Mais Vendidos da Semana</h2>
+      <p>As fragrâncias que estão a conquistar Portugal — selecionadas pelos nossos clientes.</p>
+    </div>
+    <div class="grid" id="bestGrid"></div>
+  </div>
+</section>
+
+<!-- BUY 1 GET 2 -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="b1g2">
+      <div>
+        <span class="badge-off">OFERTA EXCLUSIVA</span>
+        <h2>Compra 1, <em>Leva 2</em></h2>
+        <p>Adiciona qualquer perfume ao carrinho e escolhe um segundo perfume totalmente <b>grátis</b>. A tua coleção do Médio Oriente começa aqui.</p>
+        <ul>
+          <li>Válido nos primeiros acessos</li>
+          <li>1 oferta por encomenda</li>
+          <li>Aplicável a toda a loja</li>
+        </ul>
+      </div>
+      <div style="position:relative;z-index:2">
+        <a href="#bestsellers" class="btn btn-gold" style="width:100%;justify-content:center">Aproveitar Agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRENDING -->
+<section id="secTrend" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">📈 Em alta esta semana</div>
+      <h2>Tendências</h2>
+      <p>Os perfumes mais procurados do momento — não deixes escapar.</p>
+    </div>
+    <div class="grid" id="trendGrid"></div>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section id="secNew">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">✨ Acabados de chegar</div>
+      <h2>Novidades</h2>
+      <p>Fresquinhos do Médio Oriente, diretamente para a tua coleção.</p>
+    </div>
+    <div class="grid" id="newGrid"></div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section style="background:var(--sand)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Encontra o teu perfume</div>
+      <h2>Compra por Estilo</h2>
+    </div>
+    <div class="cats">
+      <div class="cat-tile">
+        <h3>Por Ocasião</h3>
+        <p>O aroma certo para cada momento.</p>
+        <div class="chips"><span class="chip" onclick="chipOccasion('Dia')">Dia</span><span class="chip" onclick="chipOccasion('Noite')">Noite</span><span class="chip" onclick="chipOccasion('Trabalho')">Trabalho</span><span class="chip" onclick="chipOccasion('Encontro')">Encontro</span><span class="chip" onclick="chipOccasion('Festa')">Festa</span></div>
+      </div>
+      <div class="cat-tile">
+        <h3>Por Estação</h3>
+        <p>Fragrâncias para todo o ano.</p>
+        <div class="chips"><span class="chip" onclick="chipSeason('Primavera')">Primavera</span><span class="chip" onclick="chipSeason('Verão')">Verão</span><span class="chip" onclick="chipSeason('Outono')">Outono</span><span class="chip" onclick="chipSeason('Inverno')">Inverno</span></div>
+      </div>
+      <div class="cat-tile">
+        <h3>Por Orçamento</h3>
+        <p>Luxo para todas as carteiras.</p>
+        <div class="chips"><span class="chip" onclick="chipBudget(15,'Até 15 €')">Até €15</span><span class="chip" onclick="chipBudget(25,'Até 25 €')">Até €25</span><span class="chip" onclick="chipBudget(40,'Até 40 €')">Até €40</span><span class="chip" onclick="chipBudget(0,'Premium (40 €+)')">Premium €40+</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKS -->
+<section id="packs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">💎 Poupa mais</div>
+      <h2>Packs Exclusivos</h2>
+      <p>Coleções montadas a dedo, com descontos que só encontras aqui.</p>
+    </div>
+    <div class="packs" id="packGrid"></div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:10px">
+      <div class="kicker">Marcas de confiança</div>
+      <h2>As Melhores Casas Árabes</h2>
+    </div>
+    <div class="brand-row">
+      <span onclick="filterBrand('Lattafa')" style="cursor:pointer">Lattafa</span><span onclick="filterBrand('Al Wataniah')" style="cursor:pointer">Al Wataniah</span><span onclick="filterBrand('Armaf')" style="cursor:pointer">Armaf</span><span onclick="filterBrand('French Avenue')" style="cursor:pointer">French Avenue</span><span onclick="filterBrand('Orientica')" style="cursor:pointer">Orientica</span><span onclick="filterBrand('Alhambra')" style="cursor:pointer">Alhambra</span>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">⭐ 4.9/5 · +3.000 avaliações</div>
+      <h2>O Que Dizem os Clientes</h2>
+    </div>
+    <div class="reviews" id="reviewGrid"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Dúvidas?</div>
+      <h2>Perguntas Frequentes</h2>
+    </div>
+    <div class="faq-wrap" id="faqWrap"></div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section>
+  <div class="wrap">
+    <div class="news">
+      <h2>Recebe <em>10% de desconto</em></h2>
+      <p>Subscreve a newsletter e recebe 10% na tua primeira compra + acesso a promoções exclusivas.</p>
+      <form onsubmit="subscribe(event)">
+        <input type="email" placeholder="O teu melhor email" required>
+        <button class="btn btn-gold" type="submit">Quero o desconto</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a href="#top" class="logo" style="margin:0" onclick="showHome()">
+          <img class="logo-img" src="assets/logo.webp" alt="Mundo Árabe" style="height:74px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span style="display:none;align-items:center;gap:12px">
+            <span class="mark arabic">ع</span>
+            <span class="txt"><b style="color:#fff">Mundo Árabe</b><span>Perfumes Originais</span></span>
+          </span>
+        </a>
+        <p>A essência do Médio Oriente em Portugal. Perfumes 100% originais, importados diretamente, com fixação prolongada.</p>
+        <div class="foot-pay"><span>MB WAY</span><span>Multibanco</span><span>SSL</span></div>
+      </div>
+      <div>
+        <h4>Loja</h4>
+        <a href="#" onclick="showCategory(null,'Todos os Perfumes');return false">Todos os perfumes</a>
+        <a href="#" onclick="showCategory('Masculino','Perfumes Masculinos');return false">Masculino</a>
+        <a href="#" onclick="showCategory('Feminino','Perfumes Femininos');return false">Feminino</a>
+        <a href="#" onclick="showCategory('Unisex','Perfumes Unissexo');return false">Unissexo</a>
+        <a href="#" onclick="goPacks();return false">Packs</a>
+      </div>
+      <div>
+        <h4>Apoio</h4>
+        <a href="#" onclick="openRastreio();return false">Rastreio de encomenda</a>
+        <a href="#" onclick="openInfo('envios');return false">Envios e devoluções</a>
+        <a href="#" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'});return false">FAQ</a>
+        <a href="#" onclick="openInfo('contacto');return false">Contacto</a>
+        <a href="#" onclick="openInfo('reclamacoes');return false">Livro de Reclamações</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#" onclick="openInfo('sobre');return false">Sobre nós</a>
+        <a href="#" onclick="openInfo('privacidade');return false">Política de privacidade</a>
+        <a href="#" onclick="openInfo('termos');return false">Termos e trocas</a>
+        <a href="#" onclick="openInfo('pagamentos');return false">Métodos de pagamento</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Mundo Árabe. Todos os direitos reservados.</span>
+      <span>Feito com ✦ em Portugal · Trocas em 14 dias, sem perguntas</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Carrinho (<span id="cartTitleCount">0</span>)</h3>
+    <button class="x" id="closeCart" aria-label="Fechar">×</button>
+  </div>
+  <div class="ship-bar" id="shipBar" style="display:none"></div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot" id="cartFoot" style="display:none">
+    <div id="giftSlot"></div>
+    <div class="row"><span>Subtotal</span><span id="subtotal">0,00 €</span></div>
+    <div class="row"><span>Envio</span><span id="shipping">—</span></div>
+    <div class="row total"><span>Total</span><b id="total">0,00 €</b></div>
+    <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="checkout()">Finalizar Compra</button>
+  </div>
+</aside>
+
+<!-- GIFT PICKER (Compre 1, Leve 2) -->
+<div class="co-overlay" id="giftOverlay"></div>
+<div class="gift-modal" id="giftModal" role="dialog" aria-modal="true" aria-label="Escolher brinde">
+  <div class="co-head">
+    <div class="co-title">🎁 Escolhe o teu brinde grátis</div>
+    <button class="co-close" onclick="closeGift()" aria-label="Fechar">×</button>
+  </div>
+  <div class="gift-body" id="giftBody"></div>
+</div>
+
+<!-- PRODUCT PAGE -->
+<div class="product-page" id="productModal" role="dialog" aria-label="Produto">
+  <div class="pp-top">
+    <button class="pp-back" onclick="closeProduct()">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg> Voltar
+    </button>
+    <div class="pp-crumb" id="ppCrumb"></div>
+    <button class="pp-cart" onclick="closeProduct();openCart()" aria-label="Carrinho">
+      <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+    </button>
+  </div>
+  <div class="pp-wrap" id="pmBody"></div>
+</div>
+
+<!-- GENERIC MODAL (pesquisa, quiz, rastreio, páginas) -->
+<div class="co-overlay" id="genOverlay"></div>
+<div class="gen-modal" id="genModal" role="dialog" aria-modal="true" aria-label="Janela">
+  <div class="co-head">
+    <div class="co-title" id="genTitle"></div>
+    <button class="co-close" onclick="closeGen()" aria-label="Fechar">×</button>
+  </div>
+  <div class="gen-body" id="genBody"></div>
+</div>
+
+<!-- CHECKOUT -->
+<div class="co-overlay" id="coOverlay"></div>
+<div class="checkout" id="checkout" role="dialog" aria-modal="true" aria-label="Finalizar compra">
+  <div class="co-head">
+    <button class="co-back" id="coBack" aria-label="Voltar">←</button>
+    <div class="co-title">Finalizar Compra</div>
+    <button class="co-close" id="coClose" aria-label="Fechar">×</button>
+  </div>
+  <div class="co-steps" id="coStepsBar">
+    <div class="st" data-s="1"><span class="n">1</span> Dados</div>
+    <div class="sep"></div>
+    <div class="st" data-s="2"><span class="n">2</span> Pagamento</div>
+    <div class="sep"></div>
+    <div class="st" data-s="3"><span class="n">3</span> Confirmação</div>
+  </div>
+  <div class="co-body" id="coBody"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ===== Product data =====
+const money = n => n.toFixed(2).replace('.', ',') + ' €';
+const stars = r => '★★★★★'.slice(0,r) + `<span>${r}.0</span>`;
+
+const bestsellers = [
+  {id:'asad', name:'Lattafa Asad EDP', cat:'Masculino', now:12.71, was:41.30, off:69, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/br-11134207-7r98o-lz6imytvk3z93e-8f78459d2e5c8e2d1c17629640330431-1024-1024.webp?v=1776386218', badge:'-69%'},
+  {id:'sabah', name:'Al Wataniah Sabah Al Ward EDP', cat:'Feminino', now:13.99, was:27.98, off:50, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/1064643-0d7d1b58c9349d2fb517377620416072-1024-1024_43af7637-15cd-4549-be60-5bf6fd434100.webp?v=1776386259', badge:'-50%'},
+  {id:'yara', name:'Lattafa Yara EDP', cat:'Feminino', now:13.99, was:31.09, off:55, r:5, img:'https://glowin.pt/wp-content/uploads/2025/07/lattafa-yara-edp-100ml-1.1-1080x1080-1.jpeg', badge:'-55%'},
+  {id:'fakhar', name:'Lattafa Fakhar Rose EDP', cat:'Feminino', now:13.99, was:35.87, off:61, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/1093674-0b917bbab5df1dc8fb17377357049576-1024-1024_067ebf66-bd5f-463a-b582-558f4749df92.webp?v=1776386261', badge:'-61%'},
+  {id:'bourbon', name:'Lattafa Asad Bourbon EDP', cat:'Masculino', now:13.99, was:37.81, off:63, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/asad-bourbon-lattafa-eau-de-parfum-masculino-03-1-85548f5c2524b2f94617715158254218-1024-1024.webp?v=1776386456', badge:'-63%'},
+  {id:'elixir', name:'Lattafa Asad Elixir EDP', cat:'Masculino', now:15.26, was:43.60, off:65, r:5, img:'https://www.lattafa-usa.com/cdn/shop/files/ASADELIXIRBOTTLE.png', badge:'-65%'},
+  {id:'club', name:'Armaf Club De Nuit Intense', cat:'Masculino', now:15.26, was:41.24, off:63, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/br-11134207-81z1k-mfn3okdxvv2ccc-044b4031a1dec49c6717629833050412-1024-1024.webp?v=1776386222', badge:'-63%'},
+  {id:'brun', name:'French Avenue Liquid Brun', cat:'Masculino', now:15.26, was:41.24, off:63, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/br-11134207-81z1k-mggz2g7q562vb9-bcfddc7d1fc6d553fc17629905050033-1024-1024.webp?v=1776386225', badge:'-63%'},
+];
+
+const trending = [
+  {id:'zanzibar', name:'Lattafa Asad Zanzibar EDP', cat:'Masculino', now:33.21, was:77.23, off:57, r:5, img:'https://glowin.pt/wp-content/uploads/2025/07/Asad-Zanzibar-2-1080x1080-1.jpg', badge:'-57%', tag:'hot'},
+  {id:'pisa', name:'Lattafa Pride Pisa EDP', cat:'Unisex', now:39.06, was:90.84, off:57, r:5, img:'https://glowin.pt/wp-content/uploads/2025/11/6290360593036_1-800x800-2.jpg', badge:'-57%', tag:'hot'},
+  {id:'yararose', name:'Lattafa Yara Rose EDP', cat:'Feminino', now:23.94, was:58.39, off:59, r:5, img:'https://glowin.pt/wp-content/uploads/2025/07/lattafa-yara-edp-100ml-1.1-1080x1080-1.jpeg', badge:'-59%', tag:'hot'},
+  {id:'afeef', name:'Lattafa Afeef EDP', cat:'Unisex', now:26.06, was:55.45, off:53, r:5, img:'https://www.lattafa-usa.com/cdn/shop/files/Afeef-1.png', badge:'-53%'},
+  {id:'atheeri', name:'Lattafa Atheeri EDP', cat:'Feminino', now:30.36, was:69.00, off:56, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/60ff2d47b84e7ac68767cd5d6704787f7bc997aa-2c18a8719f16f4923c17565683545933-1024-1024.webp?v=1776386440', badge:'-56%'},
+  {id:'musamam', name:'Lattafa Musamam White Intense', cat:'Unisex', now:28.90, was:62.00, off:53, r:5, img:'https://www.lattafa-usa.com/cdn/shop/files/Musamam-White-1.png', badge:'-53%'},
+];
+
+const arrivals = [
+  {id:'yaramini', name:'Lattafa Yara Mini Collection 4x20ml', cat:'Feminino', now:24.43, was:59.59, off:59, r:5, img:'https://glowin.pt/wp-content/uploads/2025/10/Lattafa_Yara_Collection_5_ml_Eau_de_Parfum_3.webp', badge:'-59%', tag:'new'},
+  {id:'lionheart', name:'Armaf Club De Nuit Lionheart', cat:'Masculino', now:15.26, was:41.24, off:63, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/sg-11134201-7rdy9-mcs49posa638b9-8cfbe654f13f9395a617629902948621-1024-1024.webp?v=1776386211', badge:'-63%', tag:'new'},
+  {id:'delilah', name:'Alhambra Delilah Pour Femme EDP', cat:'Feminino', now:9.60, was:16.55, off:42, r:5, img:'https://glowin.pt/wp-content/uploads/2025/11/6291107459196_6-800x800-2.png', badge:'-42%', tag:'new'},
+  {id:'eclaire', name:'Lattafa Eclaire EDP', cat:'Feminino', now:14.90, was:34.00, off:56, r:5, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/eclaire-1-5dcb8a3d420c39763517376716490544-1024-1024_784e95e1-f383-492b-ab9f-13483391be17.webp?v=1776386276', badge:'-56%', tag:'new'},
+];
+
+const extras = [
+  {id:'khamrah', name:'Lattafa Khamrah', cat:'Unisex', now:29.90, was:65.00, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/br-11134207-7r98o-maq1n6u4lam15b-27cf4d6ec42a0f5b6017640926746792-1024-1024.webp?v=1776386215'},
+  {id:'royalamber', name:'Orientica Royal Amber', cat:'Luxo', now:34.90, was:75.00, img:'https://cdn.shopify.com/s/files/1/0673/1513/8662/files/br-11134207-7r98o-mdk9luch7qvlbf-d298d2bc7df149e8c217629942631683-1024-1024.webp?v=1776386213'},
+];
+
+const packs = [
+  {id:'p-masc', name:'Pack Essencial Masculino', sub:'3 perfumes', now:35.67, was:41.96, save:15, items:['Lattafa Asad','Armaf Club De Nuit Intense','Lattafa Asad Bourbon']},
+  {id:'p-fem', name:'Pack Encanto Feminino', sub:'3 perfumes', now:45.21, was:53.19, save:15, items:['Lattafa Yara','Lattafa Eclaire','Lattafa Yara Rose']},
+  {id:'p-lux', name:'Pack Mundo Luxo', sub:'3 perfumes premium', now:50.98, was:63.73, save:20, items:['Lattafa Asad Zanzibar','Lattafa Khamrah','Orientica Royal Amber']},
+];
+
+const reviews = [
+  {r:5, t:'Cheira exatamente como um perfume de €150 e dura o dia todo! Nunca mais compro noutro sítio.', who:'Sofia M.', loc:'Lisboa', i:'S'},
+  {r:5, t:'Original, chegou em 2 dias e a embalagem é de luxo. O Asad é uma bomba de fixação.', who:'Ricardo P.', loc:'Porto', i:'R'},
+  {r:5, t:'A promoção compra 1 leva 2 é incrível. Fiquei viciada nos Lattafa!', who:'Mariana C.', loc:'Braga', i:'M'},
+  {r:5, t:'Qualidade premium a um preço justo. O Club de Nuit é idêntico ao original.', who:'André S.', loc:'Faro', i:'A'},
+];
+
+const faqs = [
+  {q:'Os perfumes são realmente originais?', a:'Sim. Trabalhamos apenas com importação direta das casas árabes oficiais (Lattafa, Armaf, Orientica, entre outras). Cada frasco vem selado e com código de autenticidade.'},
+  {q:'Quanto tempo demora a entrega?', a:'Enviamos por CTT com entrega em 24-48h úteis em todo o Portugal continental. Recebe o código de rastreio assim que a encomenda sai.'},
+  {q:'Como funciona a promoção "Compra 1, Leva 2"?', a:'Adicionas qualquer perfume ao carrinho e escolhes um segundo perfume como oferta grátis. Limitado a 1 oferta por encomenda, enquanto durar o stock.'},
+  {q:'Que métodos de pagamento aceitam?', a:'Aceitamos MB WAY, Multibanco e cartão. Todos os pagamentos são processados com encriptação SSL segura.'},
+  {q:'Posso trocar ou devolver?', a:'Sim. Tens 14 dias para trocar ou devolver, sem perguntas, desde que o produto esteja em bom estado.'},
+  {q:'Os perfumes têm boa fixação?', a:'Os perfumes árabes destacam-se pela concentração (EDP) e fixação prolongada — muitos duram 8 a 12 horas na pele.'},
+];
+
+// ===== Render =====
+function cardHTML(p){
+  const tag = p.tag ? `<span class="tag ${p.tag}">${p.tag==='new'?'Novo':'Popular'}</span>` : '';
+  return `<article class="card" data-cat="${p.cat}" onclick="openProduct('${p.id}')">
+    <div class="media">
+      ${p.badge?`<span class="badge">${p.badge}</span>`:''}
+      ${tag}
+      <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.style.opacity=.25">
+      <span class="card-view">Ver produto</span>
+    </div>
+    <div class="body">
+      <div class="cat">${p.cat}</div>
+      <h3>${p.name}</h3>
+      <div class="stars">${stars(p.r)}</div>
+      <div class="price"><span class="now">${money(p.now)}</span>${p.was?`<span class="was">${money(p.was)}</span>`:''}</div>
+      <button class="add" onclick="event.stopPropagation();addToCart('${p.id}')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        Adicionar
+      </button>
+    </div>
+  </article>`;
+}
+
+const allProducts = [...bestsellers, ...trending, ...arrivals, ...extras,
+  ...packs.map(p=>({id:p.id,name:p.name,cat:'Pack',now:p.now,was:p.was,img:''}))];
+
+// Aplica alterações feitas no painel admin (preço / stock / ocultar)
+try{
+  const ov=JSON.parse(localStorage.getItem('ma_products')||'{}');
+  allProducts.forEach(p=>{ const o=ov[p.id]; if(o){ if(o.now!=null)p.now=+o.now; if(o.was!=null)p.was=+o.was; if(o.stock!=null)p.stock=+o.stock; if(o.hidden)p._hidden=true; } });
+  Object.values(ov).forEach(o=>{ if(o.custom && !allProducts.find(x=>x.id===o.id)) allProducts.push({id:o.id,name:o.name,cat:o.cat||'Unisex',now:+o.now,was:o.was?+o.was:null,img:o.img,r:5,badge:o.was?('-'+Math.round((1-o.now/o.was)*100)+'%'):null,stock:o.stock!=null?+o.stock:25}); });
+}catch(e){}
+
+document.getElementById('bestGrid').innerHTML = bestsellers.map(cardHTML).join('');
+document.getElementById('trendGrid').innerHTML = trending.map(cardHTML).join('');
+document.getElementById('newGrid').innerHTML = arrivals.map(cardHTML).join('');
+
+document.getElementById('packGrid').innerHTML = packs.map(p=>`
+  <div class="pack">
+    <div class="ph">
+      <span class="save">-${p.save}%</span>
+      <div class="sub">${p.sub}</div>
+      <h3>${p.name}</h3>
+    </div>
+    <div class="pb">
+      <ul>${p.items.map(i=>`<li>${i}</li>`).join('')}</ul>
+      <div class="price"><span class="now">${money(p.now)}</span><span class="was">${money(p.was)}</span></div>
+      <button class="add" onclick="addToCart('${p.id}')" style="margin-top:14px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        Adicionar Pack
+      </button>
+    </div>
+  </div>`).join('');
+
+document.getElementById('reviewGrid').innerHTML = reviews.map(v=>`
+  <div class="review">
+    <div class="stars">${stars(v.r)}</div>
+    <p>"${v.t}"</p>
+    <div class="who"><div class="av">${v.i}</div><div><b>${v.who}</b><span>${v.loc} · Compra verificada</span></div></div>
+  </div>`).join('');
+
+document.getElementById('faqWrap').innerHTML = faqs.map(f=>`
+  <div class="faq">
+    <button class="q" onclick="this.parentElement.classList.toggle('open')">${f.q}<span class="plus">+</span></button>
+    <div class="a"><p>${f.a}</p></div>
+  </div>`).join('');
+
+// ===== Cart =====
+let cart = {};
+let giftId = null;
+const SHIP_FREE = 40, SHIP_COST = 2.90;
+const findProduct = id => allProducts.find(p=>p.id===id);
+const BRAND = {asad:'Lattafa',sabah:'Al Wataniah',yara:'Lattafa',fakhar:'Lattafa',bourbon:'Lattafa',elixir:'Lattafa',club:'Armaf',brun:'French Avenue',zanzibar:'Lattafa',pisa:'Lattafa',yararose:'Lattafa',afeef:'Lattafa',atheeri:'Lattafa',musamam:'Lattafa',yaramini:'Lattafa',lionheart:'Armaf',delilah:'Alhambra',eclaire:'Lattafa',khamrah:'Lattafa',royalamber:'Orientica'};
+const brandOf = id => BRAND[id] || 'Mundo Árabe';
+function cartName(p){
+  if(p.cat==='Pack') return p.name;
+  const n = p.name.replace(/\bEDP\b/,'Eau de Parfum');
+  return `Perfume ${n} ${p.cat} - 100ml`;
+}
+function cartSubtotal(){ let s=0; for(const id in cart) s+=findProduct(id).now*cart[id]; return s; }
+function giftCap(){ let m=0; for(const id in cart){ const n=findProduct(id).now; if(n>m)m=n; } return m; }
+
+function addToCart(id){
+  cart[id] = (cart[id]||0) + 1;
+  renderCart(); bump();
+  toast(brandOf(id) + ' adicionado ao carrinho!');
+  openCart();
+}
+function changeQty(id, d){
+  cart[id] = (cart[id]||0) + d;
+  if(cart[id] <= 0) delete cart[id];
+  renderCart();
+}
+function removeItem(id){ delete cart[id]; renderCart(); }
+function saveCart(){ try{ localStorage.setItem('ma_cart', JSON.stringify({cart, giftId})); }catch(e){} }
+function loadCart(){ try{ const s=JSON.parse(localStorage.getItem('ma_cart'))||{}; cart=s.cart||{}; giftId=s.giftId||null; }catch(e){ cart={}; giftId=null; } }
+
+function bump(){
+  const el = document.getElementById('cartCount');
+  el.animate([{transform:'scale(1.5)'},{transform:'scale(1)'}],{duration:300});
+}
+
+// ===== Gift (Compre 1, Leve 2) =====
+function setGift(id){ giftId = id; closeGift(); renderCart(); }
+function openGift(){
+  const cap = giftCap();
+  const eligible = allProducts.filter(p=>p.img && p.cat!=='Pack' && p.now<=cap+0.001);
+  document.getElementById('giftBody').innerHTML = eligible.length ? eligible.map(p=>`
+    <div class="gift-pick" onclick="setGift('${p.id}')">
+      <img src="${p.img}" alt="">
+      <div><div class="br">${brandOf(p.id)}</div><h5>${cartName(p)}</h5>
+        <div class="rp"><s>${money(p.now)}</s> <b class="free">GRÁTIS</b></div></div>
+      <span class="gp-btn">Escolher</span>
+    </div>`).join('') : `<p style="color:#8f8674;text-align:center;padding:34px">Adiciona um produto ao carrinho para desbloquear o teu brinde.</p>`;
+  document.getElementById('giftModal').classList.add('show');
+  document.getElementById('giftOverlay').classList.add('show');
+  lockScroll(true);
+}
+function closeGift(){
+  document.getElementById('giftModal').classList.remove('show');
+  document.getElementById('giftOverlay').classList.remove('show');
+  if(!drawer.classList.contains('show')) lockScroll(false);
+}
+
+function delSvg(fn){ return `<button class="ci-del" onclick="${fn}" aria-label="Remover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg></button>`; }
+
+function renderCart(){
+  if(giftId){ const g=findProduct(giftId); if(!g || Object.keys(cart).length===0 || g.now>giftCap()+0.001) giftId=null; }
+  saveCart();
+  const ids = Object.keys(cart);
+  const subtotal = cartSubtotal();
+  const count = ids.reduce((s,id)=>s+cart[id],0) + (giftId?1:0);
+  document.getElementById('cartCount').textContent = count;
+  document.getElementById('cartTitleCount').textContent = count;
+  const body = document.getElementById('cartBody');
+  const foot = document.getElementById('cartFoot');
+  const shipBar = document.getElementById('shipBar');
+
+  if(ids.length===0){
+    shipBar.style.display='none';
+    body.innerHTML = `<div class="cart-empty">
+      <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="#5a5342" stroke-width="1.4" style="margin:0 auto 14px"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+      <p>O teu carrinho está vazio.</p></div>`;
+    foot.style.display='none';
+    return;
+  }
+
+  // free-ship progress
+  shipBar.style.display='block';
+  const falta = Math.max(0, SHIP_FREE - subtotal);
+  const pct = Math.min(100, subtotal/SHIP_FREE*100);
+  shipBar.innerHTML = `
+    <div class="ship-msg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="1" y="7" width="15" height="10" rx="1"/><path d="M16 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg>
+      ${falta>0 ? `Faltam <b>${money(falta)}</b> para envio <b>GRÁTIS</b>` : `🎉 Tens <b>envio GRÁTIS</b>!`}
+    </div>
+    <div class="ship-track"><div class="ship-fill" style="width:${pct}%"></div></div>`;
+
+  // items
+  let html = ids.map(id=>{
+    const p = findProduct(id);
+    return `<div class="cart-item">
+      <div class="ci-img">${p.img?`<img src="${p.img}" alt=""><span class="orig">ORIGINAL</span>`:`<div style="width:100%;height:100%;display:grid;place-items:center;font-size:26px">💎</div>`}</div>
+      <div class="ci-info">
+        <div class="ci-top">
+          <div><div class="br">${brandOf(id)}</div><h4>${cartName(p)}</h4></div>
+          ${delSvg(`removeItem('${id}')`)}
+        </div>
+        <div class="ci-bottom">
+          <div class="qty"><button onclick="changeQty('${id}',-1)">−</button><span>${cart[id]}</span><button onclick="changeQty('${id}',1)">+</button></div>
+          <div class="ci-price">${money(p.now*cart[id])}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // gift item
+  if(giftId){
+    const g = findProduct(giftId);
+    html += `<div class="cart-item">
+      <div class="ci-img">${g.img?`<img src="${g.img}" alt=""><span class="orig" style="background:var(--green)">BRINDE</span>`:`<div style="width:100%;height:100%;display:grid;place-items:center;font-size:26px">🎁</div>`}</div>
+      <div class="ci-info">
+        <div class="ci-top">
+          <div><div class="br">${brandOf(giftId)}</div><h4>${cartName(g)}</h4></div>
+          ${delSvg(`setGift(null)`)}
+        </div>
+        <div class="ci-bottom">
+          <span style="font-size:12px;color:#8f8674">🎁 Compre 1 · Leve 2</span>
+          <div class="ci-price free">GRÁTIS</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // recommendations
+  const recos = allProducts.filter(p=>p.img && p.cat!=='Pack' && !cart[p.id] && p.id!==giftId).slice(0,3);
+  if(recos.length){
+    html += `<div class="reco-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 2.4 5.3 5.6.5-4.2 3.7 1.2 5.5L12 20.6 6.4 23.5l1.2-5.5L3.4 14.3l5.6-.5z"/></svg> Quem comprou também levou</div>`;
+    html += recos.map(p=>`<div class="reco" onclick="openProduct('${p.id}')" style="cursor:pointer">
+      <img src="${p.img}" alt="">
+      <div class="r-tx"><div class="br">${brandOf(p.id)}</div><h5>${cartName(p)}</h5><div class="rp">${money(p.now)}</div></div>
+      <button class="r-add" onclick="event.stopPropagation();addToCart('${p.id}')">+ Adicionar</button>
+    </div>`).join('');
+  }
+  body.innerHTML = html;
+
+  // gift box (footer)
+  const cap = giftCap();
+  const slot = document.getElementById('giftSlot');
+  if(giftId){
+    const g = findProduct(giftId);
+    slot.innerHTML = `<div class="gift-box">
+      <div class="g-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7S9 2 6.5 4 9 7 12 7zM12 7s3-5 5.5-3S15 7 12 7z"/></svg></div>
+      <div class="g-tx"><b>Brinde: ${g.name}</b><span class="free">GRÁTIS aplicado ✓</span></div>
+      <button class="g-btn" onclick="openGift()">Trocar</button>
+    </div>`;
+  } else {
+    slot.innerHTML = `<div class="gift-box">
+      <div class="g-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7S9 2 6.5 4 9 7 12 7zM12 7s3-5 5.5-3S15 7 12 7z"/></svg></div>
+      <div class="g-tx"><b>Escolher brinde grátis</b><span>Até ${money(cap)} · Compre 1 · Leve 2</span></div>
+      <button class="g-btn" onclick="openGift()">Escolher →</button>
+    </div>`;
+  }
+
+  foot.style.display='block';
+  const free = subtotal >= SHIP_FREE;
+  document.getElementById('subtotal').textContent = money(subtotal);
+  document.getElementById('shipping').textContent = free ? 'Grátis' : money(SHIP_COST);
+  document.getElementById('total').textContent = money(subtotal + (free?0:SHIP_COST));
+}
+
+// ===== Drawer =====
+const overlay = document.getElementById('overlay');
+const drawer = document.getElementById('drawer');
+function lockScroll(on){ document.body.style.overflow = on?'hidden':''; }
+function openCart(){ overlay.classList.add('show'); drawer.classList.add('show'); lockScroll(true); }
+function closeCart(){ overlay.classList.remove('show'); drawer.classList.remove('show'); lockScroll(false); }
+document.getElementById('openCart').onclick = openCart;
+document.getElementById('closeCart').onclick = closeCart;
+overlay.onclick = closeCart;
+document.getElementById('giftOverlay').onclick = closeGift;
+
+// ===== Product page =====
+let PM_ID=null, pmQty=1;
+const INFO={
+ asad:{insp:'Dior Sauvage Elixir',familia:'Amadeirado Especiado',topo:['Bergamota','Pimenta'],cor:['Lavanda','Especiarias'],fundo:['Âmbar','Madeiras'],estacao:'Outono, Inverno',ocasiao:'Noite, Encontro, Trabalho',fix:4,proj:4,rev:1248},
+ elixir:{insp:'Dior Sauvage Elixir',familia:'Amadeirado Aromático',topo:['Canela','Noz-moscada'],cor:['Lavanda','Sálvia'],fundo:['Âmbar','Baunilha','Madeiras'],estacao:'Outono, Inverno',ocasiao:'Noite, Encontro',fix:5,proj:4,rev:962},
+ bourbon:{insp:'Dior Sauvage',familia:'Amadeirado Especiado',topo:['Maçã','Pimenta'],cor:['Canela','Gengibre'],fundo:['Baunilha','Âmbar'],estacao:'Outono, Inverno',ocasiao:'Noite, Trabalho',fix:4,proj:4,rev:734},
+ club:{insp:'Creed Aventus',familia:'Frutado Amadeirado',topo:['Ananás','Bergamota','Groselha'],cor:['Rosa','Jasmim','Bétula'],fundo:['Almíscar','Musgo','Baunilha'],estacao:'Todo o ano',ocasiao:'Trabalho, Encontro, Festa',fix:4,proj:5,rev:1583},
+ lionheart:{insp:'Creed Aventus',familia:'Frutado Amadeirado',topo:['Ananás','Limão'],cor:['Bétula','Jasmim'],fundo:['Almíscar','Baunilha'],estacao:'Todo o ano',ocasiao:'Trabalho, Encontro',fix:4,proj:4,rev:611},
+ brun:{insp:'LV Ombre Nomade',familia:'Âmbar Amadeirado',topo:['Framboesa','Açafrão'],cor:['Oud','Incenso'],fundo:['Âmbar','Patchouli'],estacao:'Outono, Inverno',ocasiao:'Noite',fix:5,proj:4,rev:511},
+ yara:{familia:'Floral Frutado Gourmand',topo:['Orquídea','Tangerina'],cor:['Gianduia','Jasmim'],fundo:['Baunilha','Almíscar','Sândalo'],estacao:'Primavera, Verão',ocasiao:'Dia, Encontro',fix:4,proj:4,rev:2104},
+ yararose:{familia:'Floral Rosa',topo:['Rosa','Açafrão'],cor:['Gianduia','Jasmim'],fundo:['Baunilha','Sândalo'],estacao:'Primavera, Outono',ocasiao:'Dia, Encontro',fix:4,proj:4,rev:1190},
+ zanzibar:{familia:'Amadeirado Especiado',topo:['Bergamota','Pimenta Preta'],cor:['Cravo','Gerânio'],fundo:['Âmbar','Couro','Madeiras'],estacao:'Outono, Inverno',ocasiao:'Noite, Encontro',fix:5,proj:5,rev:689},
+ khamrah:{familia:'Âmbar Gourmand',topo:['Canela','Noz-moscada'],cor:['Tâmara','Praline'],fundo:['Baunilha','Benjoim','Âmbar'],estacao:'Outono, Inverno',ocasiao:'Noite, Festa',fix:5,proj:5,rev:1327},
+ sabah:{familia:'Floral Doce',topo:['Rosa','Frutos'],cor:['Flores Brancas','Mel'],fundo:['Baunilha','Almíscar'],estacao:'Primavera, Verão',ocasiao:'Dia, Trabalho',fix:4,proj:3,rev:842},
+ fakhar:{familia:'Floral Frutado',topo:['Frutos Vermelhos','Rosa'],cor:['Jasmim','Lírio'],fundo:['Baunilha','Almíscar'],estacao:'Primavera, Verão',ocasiao:'Dia, Encontro',fix:4,proj:4,rev:958}
+};
+function pInfo(p){
+  const d=INFO[p.id]||{}, fem=p.cat==='Feminino', masc=p.cat==='Masculino';
+  return {
+    insp:d.insp||null,
+    familia:d.familia||(fem?'Floral Frutado':masc?'Amadeirado Especiado':'Âmbar Oriental'),
+    topo:d.topo||(fem?['Frutos Vermelhos','Bergamota']:['Bergamota','Pimenta Rosa']),
+    cor:d.cor||(fem?['Jasmim','Flor de Laranjeira']:['Especiarias','Lavanda']),
+    fundo:d.fundo||(fem?['Baunilha','Almíscar']:['Âmbar','Madeiras','Oud']),
+    estacao:d.estacao||(fem?'Primavera, Verão':'Outono, Inverno'),
+    ocasiao:d.ocasiao||'Noite, Encontro, Festa',
+    fix:d.fix||4, proj:d.proj||4, rev:d.rev||847
+  };
+}
+function pmDesc(p){
+  const c = p.cat==='Masculino'?' masculino':p.cat==='Feminino'?' feminino':p.cat==='Unisex'?' unissexo':'';
+  return `Eau de Parfum ${brandOf(p.id)}${c}, 100ml. Fragrância árabe de alta concentração, com fixação prolongada (8–12h) e sillage marcante. Importação direta — 100% original e selado.`;
+}
+function pmIcon(name){
+  const paths={
+    shield:'<path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/>',
+    drop:'<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>',
+    clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    truck:'<rect x="1" y="7" width="15" height="10" rx="1"/><path d="M16 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/>'};
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">${paths[name]}</svg>`;
+}
+function dots(n){ return '●'.repeat(n)+'○'.repeat(5-n); }
+function openProduct(id){
+  const p=findProduct(id); if(!p) return;
+  PM_ID=id; pmQty=1;
+  const info=pInfo(p);
+  const poupa=p.was?money(p.was-p.now):null;
+  const rating=(4.7+p.r*0.04).toFixed(1).replace('.',',');
+  document.getElementById('ppCrumb').innerHTML=`Início / Perfumes / <b>${brandOf(id)}</b>`;
+  let related=allProducts.filter(x=>x.img&&x.cat!=='Pack'&&x.id!==id&&x.cat===p.cat).slice(0,4);
+  if(related.length<4) related=related.concat(allProducts.filter(x=>x.img&&x.cat!=='Pack'&&x.id!==id&&!related.includes(x)).slice(0,4-related.length));
+  document.getElementById('pmBody').innerHTML=`
+    <div class="pp-grid">
+      <div class="pp-media">
+        ${p.badge?`<span class="badge">${p.badge}</span>`:''}
+        <span class="best">🔥 Mais vendido</span>
+        <img src="${p.img}" onerror="this.style.opacity=.3" alt="${p.name}">
+      </div>
+      <div class="pp-info">
+        <div class="pp-brand">${brandOf(id)}</div>
+        <h1 class="pp-title">${cartName(p)}</h1>
+        <div class="pp-rate"><span class="stars">★★★★★</span> <b>${rating}</b> · ${info.rev} avaliações</div>
+        ${info.insp?`<div class="pp-insp">✦ Inspirado em ${info.insp}</div>`:''}
+        <div class="pp-price"><span class="now">${money(p.now)}</span>${p.was?`<span class="was">${money(p.was)}</span>`:''}${poupa?`<span class="poupa">Poupa ${poupa}</span>`:''}</div>
+        <div class="pp-stock">🔥 Restam apenas 5 unidades</div>
+        <div class="pp-social"><span>👁 16 pessoas a ver agora</span><span>🛒 Última compra há 20 min</span></div>
+        <div class="pp-buy">
+          <div class="pp-qty"><button onclick="pmChangeQty(-1)">−</button><span id="pmQtyVal">1</span><button onclick="pmChangeQty(1)">+</button></div>
+          <button class="btn btn-gold" onclick="pmAdd(false)">Adicionar ao carrinho</button>
+        </div>
+        <button class="btn btn-ghost" style="width:100%;justify-content:center;color:var(--ink);border-color:var(--ink);margin-bottom:16px" onclick="pmAdd(true)">Comprar já →</button>
+        <div class="pp-badges">
+          <div class="b">${pmIcon('truck')} Envio rápido</div>
+          <div class="b">${pmIcon('shield')} Original</div>
+          <div class="b">${pmIcon('clock')} Troca 14 dias</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pp-section">
+      <h3>Pirâmide Olfativa</h3>
+      <div class="pyramid">
+        <div class="pyr"><div class="lbl">Notas de Topo</div><div class="notes">${info.topo.join('<br>')}</div></div>
+        <div class="pyr"><div class="lbl">Notas de Coração</div><div class="notes">${info.cor.join('<br>')}</div></div>
+        <div class="pyr"><div class="lbl">Notas de Fundo</div><div class="notes">${info.fundo.join('<br>')}</div></div>
+      </div>
+    </div>
+
+    <div class="pp-section">
+      <h3>Desempenho & Estilo</h3>
+      <div class="spec">
+        <div class="row"><span>Família</span><span>${info.familia}</span></div>
+        <div class="row"><span>Categoria</span><span>${p.cat}</span></div>
+        <div class="row"><span>Volume</span><span>100 ml · EDP</span></div>
+        <div class="row"><span>Estação</span><span>${info.estacao}</span></div>
+        <div class="row"><span>Ocasião</span><span>${info.ocasiao}</span></div>
+        <div class="row"><span>Fixação</span><span style="color:var(--gold-deep)">${dots(info.fix)} ${info.fix}/5</span></div>
+        <div class="row"><span>Projeção</span><span style="color:var(--gold-deep)">${dots(info.proj)} ${info.proj}/5</span></div>
+      </div>
+    </div>
+
+    <div class="pp-desc-sec">
+      <b>${cartName(p)}</b> — ${pmDesc(p)} Uma assinatura olfativa de inspiração árabe, versátil e sofisticada, ideal para quem procura marcar presença e destacar-se.
+    </div>
+
+    <div class="pp-section pp-related">
+      <h3>${info.insp?`Se gostas de ${info.insp}, também vais adorar`:'Também vais adorar'}</h3>
+      <p class="rel-sub">Inspirações árabes para o mesmo perfil olfativo</p>
+      <div class="grid">${related.map(cardHTML).join('')}</div>
+    </div>`;
+  closeCart();
+  const pg=document.getElementById('productModal');
+  pg.classList.add('show'); pg.scrollTop=0;
+  document.body.style.overflow='hidden';
+}
+function pmChangeQty(d){ pmQty=Math.max(1,pmQty+d); document.getElementById('pmQtyVal').textContent=pmQty; }
+function closeProduct(){
+  document.getElementById('productModal').classList.remove('show');
+  document.body.style.overflow='';
+}
+function pmAdd(buyNow){
+  cart[PM_ID]=(cart[PM_ID]||0)+pmQty;
+  renderCart(); bump(); closeProduct();
+  if(buyNow){ checkout(); } else { openCart(); toast(brandOf(PM_ID)+' adicionado ao carrinho!'); }
+}
+
+// backdrop para o menu mobile
+const menuBack = document.createElement('div');
+menuBack.className = 'menu-back';
+document.body.appendChild(menuBack);
+const menuEl = document.querySelector('.menu');
+function toggleMobileMenu(force){
+  const open = force!==undefined ? force : !menuEl.classList.contains('open');
+  menuEl.classList.toggle('open', open);
+  menuBack.classList.toggle('on', open);
+}
+document.getElementById('burger').onclick = () => toggleMobileMenu();
+menuBack.onclick = () => toggleMobileMenu(false);
+
+// Sticky header background on scroll
+const hdr = document.querySelector('header');
+const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+// ===== Checkout (Europa: MB WAY, Multibanco, Cartão, PayPal) =====
+const CO = {
+  step:1, method:'mbway', data:{}, order:null,
+  el(id){ return document.getElementById(id); },
+  open(){
+    if(!Object.keys(cart).length){ toast('O teu carrinho está vazio'); return; }
+    this.step=1; this.order=null; this.render();
+    this.el('coOverlay').classList.add('show');
+    this.el('checkout').classList.add('show');
+    lockScroll(true);
+  },
+  close(){
+    this.el('coOverlay').classList.remove('show');
+    this.el('checkout').classList.remove('show');
+    if(this._poll) clearInterval(this._poll);
+    lockScroll(false);
+  },
+  back(){ if(this.step===2){ this.step=1; this.render(); } else { this.close(); } },
+  totals(){
+    let sub=0; for(const id in cart){ const p=findProduct(id); sub+=p.now*cart[id]; }
+    const ship = sub>=SHIP_FREE?0:SHIP_COST; return {sub, ship, total:sub+ship};
+  },
+  updateSteps(){
+    document.querySelectorAll('#coStepsBar .st').forEach(el=>el.classList.toggle('active', +el.dataset.s<=this.step));
+    this.el('coBack').style.visibility = this.step===3 ? 'hidden' : 'visible';
+  },
+  render(){
+    if(this.step===1) this.el('coBody').innerHTML=this.viewDados();
+    else if(this.step===2){ this.el('coBody').innerHTML=this.viewPagamento(); this.selectMethod(this.method); }
+    else { this.el('coBody').innerHTML=this.viewSucesso(); this.startPolling(); }
+    this.updateSteps();
+  },
+  summaryHTML(){
+    const t=this.totals();
+    let items=Object.keys(cart).map(id=>{const p=findProduct(id);return `<div class="li"><span>${cart[id]}× ${p.name}</span><span>${money(p.now*cart[id])}</span></div>`;}).join('');
+    if(giftId){ const g=findProduct(giftId); items+=`<div class="li"><span>1× ${g.name} 🎁</span><span style="color:var(--green);font-weight:700">GRÁTIS</span></div>`; }
+    return `<div class="co-summary">${items}
+      <div class="li"><span>Envio ${t.ship?'(CTT 24-48h)':''}</span><span>${t.ship?money(t.ship):'Grátis'}</span></div>
+      <div class="li tot"><span>Total</span><span>${money(t.total)}</span></div></div>`;
+  },
+  viewDados(){
+    const d=this.data;
+    return this.summaryHTML()+`
+      <div class="co-err" id="coErr"></div>
+      <div class="field"><label>Nome completo</label><input id="f_nome" value="${d.nome||''}" placeholder="O teu nome"></div>
+      <div class="field"><label>Email</label><input id="f_email" type="email" value="${d.email||''}" placeholder="email@exemplo.pt"></div>
+      <div class="field"><label>Telemóvel</label><input id="f_tel" value="${d.tel||''}" placeholder="9XX XXX XXX"></div>
+      <div class="field"><label>Morada</label><input id="f_addr" value="${d.addr||''}" placeholder="Rua, número, andar"></div>
+      <div class="row2">
+        <div class="field"><label>Código Postal</label><input id="f_cp" value="${d.cp||''}" placeholder="0000-000" maxlength="8" inputmode="numeric" oninput="CO.cpInput()"><div id="cpHint" class="cp-hint"></div></div>
+        <div class="field"><label>Localidade</label><input id="f_cidade" value="${d.cidade||''}" placeholder="Preenchido pelo código postal"></div>
+      </div>
+      <button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:6px" onclick="CO.submitDados()">Continuar para pagamento →</button>`;
+  },
+  cpInput(){
+    const el=this.el('f_cp'); if(!el) return;
+    let v=el.value.replace(/[^\d]/g,'').slice(0,7);
+    if(v.length>4) v=v.slice(0,4)+'-'+v.slice(4);
+    el.value=v;
+    if(/^\d{4}-\d{3}$/.test(v)) this.lookupCP(v);
+  },
+  async lookupCP(cp){
+    const hint=this.el('cpHint'); if(hint){ hint.textContent='A procurar morada…'; hint.className='cp-hint loading'; }
+    const apply=(loc,rua,dist)=>{
+      const cid=this.el('f_cidade'); if(cid) cid.value=loc||'';
+      const addr=this.el('f_addr'); if(addr && !addr.value.trim() && rua) addr.value=rua+', ';
+      if(hint){ hint.textContent='✓ '+loc+(dist?' · '+dist:''); hint.className='cp-hint ok'; }
+    };
+    try{
+      const r=await fetch((window.MA_API_BASE||'')+'/api/cp?cp='+cp);
+      const d=await r.json();
+      if(d && d.ok){ apply(d.localidade||d.concelho, d.rua, d.distrito); return; }
+      throw 0;
+    }catch(e){
+      try{ // fallback direto (sem backend) via Zippopotam
+        const r2=await fetch('https://api.zippopotam.us/pt/'+cp);
+        const j=await r2.json();
+        if(j && j.places && j.places[0]){ apply(j.places[0]['place name'], '', j.places[0].state); return; }
+        throw 0;
+      }catch(e2){ if(hint){ hint.textContent='Não encontrámos esse código postal.'; hint.className='cp-hint err'; } }
+    }
+  },
+  submitDados(){
+    const g=id=>this.el(id).value.trim();
+    const d={nome:g('f_nome'),email:g('f_email'),tel:g('f_tel'),addr:g('f_addr'),cp:g('f_cp'),cidade:g('f_cidade')};
+    if(!d.nome||!d.email||!d.tel||!d.addr||!d.cp||!d.cidade) return this.showErr('Preenche todos os campos.');
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return this.showErr('Email inválido.');
+    if(!/^\d{4}-?\d{3}$/.test(d.cp.replace(/\s/g,''))) return this.showErr('Código postal inválido (ex. 1000-001).');
+    this.data=d; this.step=2; this.render();
+  },
+  viewPagamento(){
+    const t=this.totals();
+    return this.summaryHTML()+`
+      <div class="co-err" id="coErr"></div>
+      <div class="pay-methods">
+        ${this.pmCard('mbway','MB WAY','Confirmas na app do telemóvel','#e2001a','MB<br>WAY')}
+        ${this.pmCard('multibanco','Multibanco','Referência para ATM / homebanking','#111827','MB')}
+      </div>
+      <div class="pm-fields" id="pmFields"></div>
+      <button class="btn btn-gold" style="width:100%;justify-content:center" id="payBtn" onclick="CO.pay()">Pagar ${money(t.total)}</button>
+      <div class="co-note">🔒 Pagamento seguro processado pela <b>Pageuro</b> · encriptação SSL</div>`;
+  },
+  pmCard(id,name,desc,color,label){
+    return `<div class="pm" data-m="${id}" onclick="CO.selectMethod('${id}')">
+      <div class="pm-ic" style="background:${color}">${label}</div>
+      <div class="pm-tx"><b>${name}</b><span>${desc}</span></div>
+      <div class="pm-rd"></div></div>`;
+  },
+  selectMethod(m){
+    this.method=m;
+    document.querySelectorAll('#checkout .pm').forEach(el=>el.classList.toggle('sel', el.dataset.m===m));
+    const f=this.el('pmFields');
+    if(m==='mbway') f.innerHTML=`<div class="field"><label>Número de telemóvel (MB WAY)</label><input id="mb_tel" value="${this.data.tel||''}" placeholder="9XX XXX XXX"></div>`;
+    else if(m==='multibanco') f.innerHTML=`<div class="co-info">Vamos gerar uma <b>referência Multibanco</b> (Entidade + Referência + Valor) para pagares em qualquer ATM ou homebanking.</div>`;
+    else if(m==='cartao') f.innerHTML=`
+      <div class="field"><label>Número do cartão</label><input id="c_num" inputmode="numeric" placeholder="0000 0000 0000 0000" maxlength="19" oninput="CO.fmtCard(this)"></div>
+      <div class="row2">
+        <div class="field"><label>Validade</label><input id="c_exp" placeholder="MM/AA" maxlength="5" oninput="CO.fmtExp(this)"></div>
+        <div class="field"><label>CVC</label><input id="c_cvc" inputmode="numeric" placeholder="123" maxlength="4"></div>
+      </div>`;
+    else f.innerHTML=`<div class="co-info">Ao clicar em pagar serás redirecionado para o <b>PayPal</b> para concluíres em segurança.</div>`;
+  },
+  fmtCard(i){ i.value=i.value.replace(/\D/g,'').replace(/(.{4})/g,'$1 ').trim(); },
+  fmtExp(i){ let v=i.value.replace(/\D/g,''); if(v.length>=3) v=v.slice(0,2)+'/'+v.slice(2,4); i.value=v; },
+  cartItems(){
+    const items=Object.keys(cart).map(id=>({id,nome:findProduct(id).name,qtd:cart[id],preco:findProduct(id).now}));
+    if(giftId) items.push({id:giftId,nome:findProduct(giftId).name,qtd:1,preco:0,brinde:true});
+    return items;
+  },
+  payload(){
+    const t=this.totals();
+    return {method:this.method,total:t.total,subtotal:t.sub,envio:t.ship,items:this.cartItems(),customer:this.data,origin:location.origin};
+  },
+  async pay(){
+    if(this.method==='mbway'){ const t=(this.el('mb_tel').value||'').replace(/\s/g,''); if(!/^\d{9}$/.test(t)) return this.showErr('Introduz um número de telemóvel válido (9 dígitos).'); }
+    if(this.method==='cartao'){
+      const num=(this.el('c_num').value||'').replace(/\s/g,''); const exp=this.el('c_exp').value; const cvc=this.el('c_cvc').value;
+      if(num.length<15) return this.showErr('Número de cartão inválido.');
+      if(!/^\d{2}\/\d{2}$/.test(exp)) return this.showErr('Validade inválida (MM/AA).');
+      if(!/^\d{3,4}$/.test(cvc)) return this.showErr('CVC inválido.');
+    }
+    const btn=this.el('payBtn'); btn.disabled=true; btn.style.opacity=.7; btn.textContent='A processar pagamento…';
+    const reset=()=>{ btn.disabled=false; btn.style.opacity=1; btn.textContent='Pagar '+money(this.totals().total); };
+    try{
+      const res=await fetch((window.MA_API_BASE||'')+'/api/pay',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(this.payload())});
+      const data=await res.json().catch(()=>({}));
+      if(res.ok && data.ok!==false){
+        if(data.checkoutUrl){ window.location.href=data.checkoutUrl; return; }   // gateway com página própria (ex.: cartão)
+        this.completeOrder(data); return;                                        // MB WAY / Multibanco → referência devolvida
+      }
+      throw new Error(data.message||'O pagamento foi recusado. Tenta novamente.');
+    }catch(e){
+      if(e instanceof TypeError){ this.completeOrder(null); return; }             // sem backend (ficheiro estático) → modo demo
+      this.showErr(e.message); reset();
+    }
+  },
+  showErr(m){ const e=this.el('coErr'); if(e){ e.textContent=m; e.style.display='block'; e.scrollIntoView({block:'nearest'}); } },
+  completeOrder(gw){
+    const t=this.totals();
+    const rndEnt=String(Math.floor(20000+Math.random()*79999));
+    const rndRef=String(Math.floor(100000000+Math.random()*899999999));
+    const fmtRef=r=>String(r).replace(/\D/g,'').replace(/(\d{3})(\d{3})(\d{3})/,'$1 $2 $3');
+    this.order={
+      num:(gw&&gw.id)?('MA'+String(gw.id).replace(/\D/g,'').slice(-8)||'MA'+String(Date.now()).slice(-8)):'MA'+String(Date.now()).slice(-8),
+      total:t.total, subtotal:t.sub, envio:t.ship, method:this.method,
+      entidade:(gw&&gw.entity)||rndEnt,
+      ref:fmtRef((gw&&gw.reference)||rndRef),
+      gatewayId:gw&&gw.id, status:(gw&&gw.status)||'WAITING_PAYMENT', demo:!!(gw&&gw.demo)||!gw,
+      items:this.cartItems(), cliente:this.data, data:new Date().toISOString(), estado:'Pendente'
+    };
+    try{ const arr=JSON.parse(localStorage.getItem('ma_orders')||'[]'); arr.unshift(this.order); localStorage.setItem('ma_orders', JSON.stringify(arr)); }catch(e){}
+    cart={}; giftId=null; saveCart(); renderCart();
+    this.step=3; this.render();
+  },
+  viewSucesso(){
+    const o=this.order; let extra='';
+    if(o.method==='multibanco') extra=`<div class="mb-ref">
+        <div class="r"><span>Entidade</span><b>${o.entidade}</b></div>
+        <div class="r"><span>Referência</span><b>${o.ref}</b></div>
+        <div class="r"><span>Valor</span><b>${money(o.total)}</b></div>
+        <div class="co-note" style="margin-top:8px">Paga em qualquer ATM ou homebanking. A encomenda segue após confirmação.</div></div>`;
+    else if(o.method==='mbway') extra=`<div class="co-info">📲 Recebeste um pedido de pagamento na app <b>MB WAY</b> de <b>${money(o.total)}</b>. Confirma no telemóvel para concluir.</div>`;
+    else extra=`<div class="co-info">✅ Pagamento de <b>${money(o.total)}</b> aprovado com sucesso.</div>`;
+    return `<div class="co-success">
+      <div class="ck"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#fff" stroke-width="3"><path d="m5 13 4 4L19 7"/></svg></div>
+      <h3>Encomenda confirmada!</h3>
+      <p style="color:var(--ink-soft);margin-bottom:14px">Obrigado, ${(this.data.nome||'').split(' ')[0]}! Nº de encomenda <b>#${o.num}</b>.</p>
+      ${extra}
+      <div id="payStatus" class="pay-status waiting"><span class="dot"></span> A aguardar confirmação de pagamento…</div>
+      <p class="co-note" style="margin-top:14px">Enviámos os detalhes para ${this.data.email}. Entrega CTT em 24-48h. 📦</p>
+      <button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:16px" onclick="CO.close()">Continuar a comprar</button>
+    </div>`;
+  },
+  startPolling(){
+    if(this._poll) clearInterval(this._poll);
+    const o=this.order; if(!o||!o.gatewayId) return;
+    const started=Date.now();
+    const check=async()=>{
+      try{
+        const r=await fetch((window.MA_API_BASE||'')+'/api/status?id='+encodeURIComponent(o.gatewayId));
+        const d=await r.json();
+        const st=(d.status||'').toLowerCase();
+        if(st==='paid'||st==='authorized'){ this.markPaid(); return; }
+        if(['refused','canceled','chargeback'].includes(st)){ this.markFailed(st); return; }
+      }catch(e){}
+      if(Date.now()-started>120000){ clearInterval(this._poll); const el=document.getElementById('payStatus'); if(el) el.innerHTML='<span class="dot"></span> Assim que o pagamento for recebido, a encomenda avança automaticamente.'; }
+    };
+    this._poll=setInterval(check, 4000); check();
+  },
+  markPaid(){
+    clearInterval(this._poll);
+    const el=document.getElementById('payStatus'); if(el){ el.className='pay-status paid'; el.innerHTML='✅ Pagamento confirmado! A tua encomenda está a ser preparada.'; }
+    if(this.order){ this.order.estado='Pago'; try{ const a=JSON.parse(localStorage.getItem('ma_orders')||'[]'); const x=a.find(y=>y.num===this.order.num); if(x){x.estado='Pago';x.status='paid';localStorage.setItem('ma_orders',JSON.stringify(a));} }catch(e){} }
+  },
+  markFailed(st){
+    clearInterval(this._poll);
+    const el=document.getElementById('payStatus'); if(el){ el.className='pay-status failed'; el.innerHTML='⚠ Pagamento '+(st==='refused'?'recusado':'cancelado')+'. Tenta novamente ou usa outro método.'; }
+  }
+};
+function checkout(){ closeCart(); CO.open(); }
+document.getElementById('coClose').onclick=()=>CO.close();
+document.getElementById('coBack').onclick=()=>CO.back();
+document.getElementById('coOverlay').onclick=()=>CO.close();
+function subscribe(e){ e.preventDefault(); e.target.reset(); toast('🎁 Desconto de 10% enviado para o teu email!'); }
+
+// ===== Toast =====
+let toastT;
+function toast(msg){
+  const el = document.getElementById('toast');
+  el.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>${msg}`;
+  el.classList.add('show');
+  clearTimeout(toastT);
+  toastT = setTimeout(()=>el.classList.remove('show'), 2600);
+}
+
+// ===== Catálogo / categorias =====
+const HOME_SECTIONS=['secBest','secTrend','secNew'];
+const perfumes=()=>{ const seen=new Set(); return allProducts.filter(p=>p.img&&p.cat!=='Pack'&&!seen.has(p.id)&&seen.add(p.id)); };
+function closeMobileMenu(){ const m=document.querySelector('.menu'); m.classList.remove('open'); const b=document.querySelector('.menu-back'); if(b) b.classList.remove('on'); }
+function showFiltered(list,title,sub){
+  document.getElementById('catTitle').textContent=title;
+  document.getElementById('catSub').textContent=sub||(list.length+' produto'+(list.length!==1?'s':''));
+  document.getElementById('catGrid').innerHTML=list.length?list.map(cardHTML).join(''):`<p style="grid-column:1/-1;text-align:center;color:var(--ink-soft);padding:50px">Sem produtos nesta seleção.</p>`;
+  HOME_SECTIONS.forEach(id=>{const e=document.getElementById(id);if(e)e.style.display='none';});
+  document.getElementById('catalog').style.display='block';
+  closeMobileMenu();
+  window.scrollTo({top:document.getElementById('catalog').offsetTop-70,behavior:'smooth'});
+}
+function showCategory(cat,title){ showFiltered(perfumes().filter(p=>!cat||p.cat===cat), title); }
+function showHome(){ document.getElementById('catalog').style.display='none'; HOME_SECTIONS.forEach(id=>{const e=document.getElementById(id);if(e)e.style.display='';}); closeMobileMenu(); }
+function goPacks(){ showHome(); closeMobileMenu(); setTimeout(()=>document.getElementById('packs').scrollIntoView({behavior:'smooth'}),60); }
+function filterBrand(b){ showFiltered(perfumes().filter(p=>brandOf(p.id)===b), b, 'Perfumes '+b); }
+function chipOccasion(o){ showFiltered(perfumes().filter(p=>pInfo(p).ocasiao.includes(o)), 'Perfumes para '+o); }
+function chipSeason(s){ showFiltered(perfumes().filter(p=>pInfo(p).estacao.includes(s)), 'Perfumes para '+s); }
+function chipBudget(max,label){ showFiltered(perfumes().filter(p=> max? p.now<=max : p.now>40), label); }
+
+// ===== Modal genérico =====
+function openGen(title,html){ document.getElementById('genTitle').textContent=title; document.getElementById('genBody').innerHTML=html; document.getElementById('genModal').classList.add('show'); document.getElementById('genOverlay').classList.add('show'); closeMobileMenu(); lockScroll(true); }
+function closeGen(){ document.getElementById('genModal').classList.remove('show'); document.getElementById('genOverlay').classList.remove('show'); if(!drawer.classList.contains('show')) lockScroll(false); }
+document.getElementById('genOverlay').onclick=closeGen;
+
+// ===== Pesquisa =====
+function openSearch(){
+  openGen('Procurar perfumes', `<input id="searchInput" class="gen-input" placeholder="Escreve o nome ou marca..." oninput="doSearch(this.value)"><div id="searchResults" class="search-results"></div>`);
+  setTimeout(()=>{const i=document.getElementById('searchInput'); if(i) i.focus();},120);
+  doSearch('');
+}
+function doSearch(q){
+  q=(q||'').trim().toLowerCase();
+  const list=q?perfumes().filter(p=>p.name.toLowerCase().includes(q)||brandOf(p.id).toLowerCase().includes(q)):perfumes().slice(0,6);
+  document.getElementById('searchResults').innerHTML=list.length?list.map(p=>`<div class="sr" onclick="closeGen();openProduct('${p.id}')"><img src="${p.img}" alt=""><div><div class="br">${brandOf(p.id)}</div><h5>${cartName(p)}</h5><div class="rp">${money(p.now)}</div></div></div>`).join(''):`<p style="text-align:center;padding:24px">Nada encontrado.</p>`;
+}
+
+// ===== Rastreio =====
+function openRastreio(){
+  openGen('Rastrear encomenda', `<p>Introduz o teu número de encomenda (ex.: MA12345678).</p><input id="trackInput" class="gen-input" placeholder="MA00000000"><button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:12px" onclick="doTrack()">Rastrear</button><div id="trackResult" style="margin-top:18px"></div>`);
+}
+function doTrack(){
+  const v=((document.getElementById('trackInput').value||'').trim().toUpperCase())||'MA00000000';
+  const steps=[['Encomenda recebida',1],['Pagamento confirmado',1],['Em processamento',1],['Enviada · CTT',1],['Em entrega',0],['Entregue',0]];
+  document.getElementById('trackResult').innerHTML=`<div class="track-box"><div class="tb-h">Encomenda <b>#${v}</b> · <span style="color:var(--gold-deep)">Em trânsito</span></div>${steps.map(([t,d])=>`<div class="tstep ${d?'done':''}"><span class="dot"></span>${t}</div>`).join('')}<p style="font-size:12px;margin-top:10px">Previsão de entrega: 1-2 dias úteis · CTT.</p></div>`;
+}
+
+// ===== Quiz =====
+const QUIZ={g:null,i:null};
+function openQuiz(){
+  QUIZ.g=null; QUIZ.i=null;
+  openGen('Descobre o teu perfume', `<p>Responde a 2 perguntas e recomendamos-te os perfumes ideais.</p>
+    <div class="quiz-q"><b>1. Para quem?</b><div class="quiz-opts">
+      <button class="qopt" onclick="quizSet('g','Masculino',this)">Masculino</button>
+      <button class="qopt" onclick="quizSet('g','Feminino',this)">Feminino</button>
+      <button class="qopt" onclick="quizSet('g','Unisex',this)">Unissexo</button></div></div>
+    <div class="quiz-q"><b>2. Que intensidade?</b><div class="quiz-opts">
+      <button class="qopt" onclick="quizSet('i','leve',this)">Suave / Dia</button>
+      <button class="qopt" onclick="quizSet('i','forte',this)">Intensa / Noite</button></div></div>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:6px" onclick="quizResult()">Ver recomendações ✦</button>
+    <div id="quizOut" style="margin-top:16px"></div>`);
+}
+function quizSet(k,v,el){ QUIZ[k]=v; el.parentElement.querySelectorAll('.qopt').forEach(b=>b.classList.remove('sel')); el.classList.add('sel'); }
+function quizResult(){
+  if(!QUIZ.g||!QUIZ.i){ document.getElementById('quizOut').innerHTML='<p style="color:var(--red)">Escolhe as duas opções acima.</p>'; return; }
+  let list=perfumes().filter(p=>p.cat===QUIZ.g);
+  list=list.sort((a,b)=>QUIZ.i==='forte'?pInfo(b).proj-pInfo(a).proj:pInfo(a).proj-pInfo(b).proj).slice(0,3);
+  if(!list.length) list=perfumes().slice(0,3);
+  document.getElementById('quizOut').innerHTML=`<h4 style="font-size:22px;margin:8px 0 12px">As tuas recomendações ✦</h4>`+list.map(p=>`<div class="sr"><img src="${p.img}" alt="" onclick="closeGen();openProduct('${p.id}')"><div style="flex:1" onclick="closeGen();openProduct('${p.id}')"><div class="br">${brandOf(p.id)}</div><h5>${cartName(p)}</h5><div class="rp">${money(p.now)}</div></div><button class="r-add" style="border:1px solid var(--gold-deep);color:var(--gold-deep);background:none;border-radius:20px;padding:9px 13px;font-weight:700;cursor:pointer" onclick="addToCart('${p.id}');closeGen()">+ Adicionar</button></div>`).join('');
+}
+
+// ===== Páginas informativas =====
+const INFOS={
+  sobre:['Sobre nós','<p>A <b>Mundo Árabe</b> nasceu da paixão pela perfumaria do Médio Oriente. Importamos diretamente das casas árabes oficiais para trazer a Portugal fragrâncias <b>100% originais</b>, de alta concentração e fixação prolongada, a preços justos.</p><p>Cada frasco chega selado e com garantia de autenticidade. A nossa missão é que descubras a tua assinatura olfativa árabe.</p>'],
+  envios:['Envios e devoluções','<p><b>Envio:</b> expedimos por CTT com entrega em <b>24-48h úteis</b> em Portugal continental. Envio <b>grátis</b> em encomendas acima de 40 €; abaixo disso, 2,90 €.</p><p><b>Devoluções:</b> tens <b>14 dias</b> para trocar ou devolver, sem perguntas, desde que o produto esteja em bom estado. Recebes o código de rastreio assim que a encomenda sai.</p>'],
+  contacto:['Contacto','<p>Estamos disponíveis para te ajudar:</p><p>✉ <b>apoio@mundoarabe.pt</b><br>📱 WhatsApp: <b>+351 900 000 000</b><br>🕐 Seg a Sex, 9h–18h</p><p>Respondemos normalmente em menos de 24h.</p>'],
+  reclamacoes:['Livro de Reclamações','<p>Nos termos da lei, disponibilizamos o <b>Livro de Reclamações eletrónico</b>.</p><p>Podes apresentar a tua reclamação em <b>www.livroreclamacoes.pt</b>. Estamos comprometidos em resolver qualquer situação com a máxima rapidez.</p>'],
+  privacidade:['Política de Privacidade','<p>Respeitamos a tua privacidade. Os teus dados (nome, morada, contacto) são usados <b>exclusivamente</b> para processar e entregar as tuas encomendas e nunca são vendidos a terceiros.</p><p>Cumprimos o RGPD. Podes pedir a consulta ou eliminação dos teus dados a qualquer momento.</p>'],
+  termos:['Termos e Trocas','<p>Ao comprar na Mundo Árabe aceitas os nossos termos: produtos 100% originais, preços em euros com IVA incluído, e direito a <b>troca em 14 dias</b>.</p><p>As imagens são ilustrativas. Reservamo-nos o direito de alterar preços e stock sem aviso prévio.</p>'],
+  pagamentos:['Métodos de Pagamento','<p>Aceitamos:</p><p>💳 <b>Cartão</b> de crédito/débito (Visa · Mastercard)<br>📱 <b>MB WAY</b><br>🏧 <b>Multibanco</b> (referência)<br>🅿 <b>PayPal</b></p><p>Todos os pagamentos são processados com encriptação <b>SSL</b> segura.</p>']
+};
+function openInfo(key){ const d=INFOS[key]; if(d) openGen(d[0], d[1]); }
+
+loadCart();
+renderCart();
+
+// Snapshot do catálogo para o painel admin
+try{
+  localStorage.setItem('ma_catalog', JSON.stringify(
+    allProducts.filter(p=>p.cat!=='Pack').map(p=>({id:p.id,name:p.name,brand:brandOf(p.id),cat:p.cat,now:p.now,was:p.was||null,img:p.img,stock:(p.stock!=null?p.stock:25)}))
+  ));
+}catch(e){}
+</script>
+</body>
+</html>
